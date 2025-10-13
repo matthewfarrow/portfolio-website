@@ -3,124 +3,351 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matt Farrow - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Matt Farrow | Blockchain Sales Expert</title>
+    <meta name="description" content="Matt Farrow - Enterprise Sales Development Representative specializing in blockchain technology and fintech. Based in Austin, TX.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header with Gothic Arch -->
-    <header class="cathedral-header">
-        <div class="stained-glass-overlay"></div>
-        <div class="header-content">
-            <h1 class="gothic-title">Matt Farrow</h1>
-            <p class="subtitle">Blockchain Developer & Analytics Architect</p>
+    <!-- Social Banner -->
+    <div class="social-banner">
+        <a href="https://www.youtube.com/channel/UCIKcIjJHTc9QfsULSZ2nM0w?sub_confirmation=1" target="_blank">
+            <svg class="social-icon" viewBox="0 0 24 24">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+        </a>
+        <a href="https://x.com/themattfarrow" target="_blank">
+            <svg class="social-icon" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/matt-farrow-543943148/" target="_blank">
+            <svg class="social-icon" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+        </a>
+        <a href="https://github.com/matthewfarrow" target="_blank">
+            <svg class="social-icon" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+        </a>
+        <a href="https://medium.com/@matt_farrow" target="_blank">
+            <svg class="social-icon" viewBox="0 0 24 24">
+                <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+            </svg>
+        </a>
+        <a href="https://open.spotify.com/show/3L2fhqj9PuiwztZdamjg0W?trackId=2W7dGWMbxPtXrNimzkrCjZ" target="_blank">
+            <svg class="social-icon" viewBox="0 0 24 24">
+                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+            </svg>
+        </a>
+        <a href="https://linktr.ee/themattfarrow" target="_blank">
+            <svg class="social-icon" viewBox="0 0 24 24">
+                <path d="M7.953 15.066c-.08.163-.08.324-.08.486.08.517.528.897 1.052.89h1.294v4.776c0 .486-.404.89-.89.89H6.577a.898.898 0 0 1-.889-.891v-4.774H.992c-.728 0-1.214-.729-.89-1.377l6.96-12.627a1.065 1.065 0 0 1 1.863 0l2.913 5.585-3.885 7.042zm15.945 0-6.96-12.627a1.065 1.065 0 0 0-1.862 0l-2.995 5.586 3.885 7.04c.081.164.081.326.081.487-.08.517-.529.897-1.052.89h-1.296v4.776c.005.49.4.887.89.89h2.914a.9.9 0 0 0 .892-.89v-4.775h4.612c.73 0 1.214-.729.89-1.377z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Hero Header -->
+    <header class="hero-header">
+        <div class="glass-overlay"></div>
+        <div class="hero-grid">
+            <div class="hero-text">
+                <h1>Matt Farrow</h1>
+                <p class="tagline">Enterprise Sales Development Representative • Blockchain & Fintech Specialist • Austin, TX</p>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-box">
+                    <span class="stat-number">$1.97M</span>
+                    <span class="stat-label">Pipeline Generated</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">197%</span>
+                    <span class="stat-label">Of Target Achieved</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">1900%+</span>
+                    <span class="stat-label">ROI on Blockchain Investments</span>
+                </div>
+            </div>
         </div>
-        <div class="arch-decoration"></div>
     </header>
 
     <!-- Navigation -->
-    <nav class="gothic-nav">
-        <div class="nav-container">
-            <a href="#about" class="nav-link">About</a>
-            <a href="#portfolio" class="nav-link">Portfolio</a>
-            <a href="#writings" class="nav-link">Writings</a>
-            <a href="#contact" class="nav-link">Connect</a>
-        </div>
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="#bio" class="nav-link">Bio</a></li>
+            <li><a href="#experience" class="nav-link">Career</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#content" class="nav-link">Content</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
     </nav>
 
-    <!-- Main Content -->
-    <main class="cathedral-main">
-        <!-- About Section -->
-        <section id="about" class="gothic-section">
-            <div class="stone-frame">
-                <h2 class="section-title">Welcome to My Digital Cathedral</h2>
-                <div class="content-pillars">
-                    <p class="intro-text">
-                        Like the master builders of old who crafted soaring cathedrals, I construct digital architectures 
-                        in the blockchain space. My work spans analytics, smart contracts, and decentralized systems—
-                        each project a carefully laid stone in the foundation of Web3's future.
+    <main>
+        <!-- Bio Section -->
+        <section id="bio" class="content-section">
+            <h2 class="section-title">About Me</h2>
+            <div class="split-section">
+                <div class="split-left">
+                    <h3>Professional Background</h3>
+                    <p>
+                        Enterprise Sales Development Representative with a proven track record in blockchain technology 
+                        and fintech. I bridge the gap between cutting-edge technology and business value, helping 
+                        enterprises understand and adopt transformative solutions.
+                    </p>
+                    <p>
+                        Currently driving $1.97M in qualified pipeline at Motive, where I achieved 197% of target and 
+                        earned promotion to Enterprise SDR in just 3 months. My approach combines deep technical 
+                        knowledge with consultative selling to deliver exceptional results.
+                    </p>
+                    
+                    <div class="skills-grid">
+                        <span class="skill-tag">Enterprise Sales</span>
+                        <span class="skill-tag">Blockchain</span>
+                        <span class="skill-tag">DeFi</span>
+                        <span class="skill-tag">Fintech</span>
+                        <span class="skill-tag">Bitcoin</span>
+                        <span class="skill-tag">Ethereum</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Data Analysis</span>
+                    </div>
+                </div>
+                
+                <div class="split-right">
+                    <div class="education-card">
+                        <h4>Bachelor of Science in Economics</h4>
+                        <p>Purdue University</p>
+                        <p>Aug 2019 – Dec 2023</p>
+                        <p>Econometrics • Management & Information Systems • Data Visualization</p>
+                    </div>
+                    
+                    <div class="cert-card">
+                        <h4>Series 7 License</h4>
+                        <p>FINRA • CRD# 6627</p>
+                        <p>May 2024</p>
+                        <p>General Securities Representative</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="dark-section">
+            <h2 class="section-title">Professional Journey</h2>
+            <div class="timeline-horizontal">
+                <div class="timeline-card">
+                    <div class="timeline-date">Oct 2024 – Aug 2025</div>
+                    <div class="timeline-body">
+                        <h3 class="timeline-title">Senior SDR, Enterprise</h3>
+                        <p class="timeline-company">Motive • Austin, TX</p>
+                        <div class="timeline-metrics">
+                            <div class="metric"><strong>$1.97M</strong> Pipeline</div>
+                            <div class="metric"><strong>197%</strong> of Target</div>
+                            <div class="metric"><strong>3 Months</strong> to Promotion</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="timeline-date">Jan 2025 – Aug 2025</div>
+                    <div class="timeline-body">
+                        <h3 class="timeline-title">Sales Development Representative</h3>
+                        <p class="timeline-company">VastAdvisor.ai • Austin, TX</p>
+                        <div class="timeline-metrics">
+                            <div class="metric"><strong>$1.93B</strong> AUM Onboarded</div>
+                            <div class="metric"><strong>85%+</strong> Conversion Rate</div>
+                            <div class="metric"><strong>0%</strong> Client Churn</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="timeline-date">Jun 2022 – Sep 2023</div>
+                    <div class="timeline-body">
+                        <h3 class="timeline-title">Lecturer & Course Developer</h3>
+                        <p class="timeline-company">Purdue University & Cartesi</p>
+                        <p class="timeline-description">
+                            Co-authored Purdue's first undergraduate blockchain course. Delivered lectures on cryptography, 
+                            consensus mechanisms, DAOs, and Bitcoin. Secured Cartesi contract for optimistic rollups workshop.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="content-section">
+            <h2 class="section-title">Technical Projects</h2>
+            
+            <div class="project-alt">
+                <div class="project-visual">
+                    <div class="project-icon">₿</div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Analytics</span>
+                        <span class="tech-badge">Bitcoin</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Bitcoin Analytics Dashboard</h3>
+                    <p>Comprehensive analytics platform for Bitcoin data visualization and insights, combining on-chain 
+                    analysis with advanced charting capabilities. Real-time market data and historical trend analysis.</p>
+                    <a href="https://bowless-wilton-unsupportably.ngrok-free.dev/" target="_blank" class="project-link">Explore Dashboard →</a>
+                </div>
+            </div>
+
+            <div class="project-alt reverse">
+                <div class="project-visual">
+                    <div class="project-icon">🌐</div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Flask</span>
+                        <span class="tech-badge">BTCPay</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>BTC Crowdfunding Platform</h3>
+                    <p>Bitcoin-native crowdfunding application with BTCPay Server integration, demonstrating practical 
+                    implementation of Bitcoin payments and wallet management. Features milestone-based fund releases.</p>
+                    <a href="https://github.com/matthewfarrow/btc-crowd-funding" target="_blank" class="project-link">View on GitHub →</a>
+                </div>
+            </div>
+
+            <div class="project-alt">
+                <div class="project-visual">
+                    <div class="project-icon">⚡</div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">ML</span>
+                        <span class="tech-badge">Ethereum</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>MEV Data Analysis Toolkit</h3>
+                    <p>Comprehensive toolkit for analyzing Maximum Extractable Value with bundle analysis, PCA modeling, 
+                    and transaction pattern recognition. Built for identifying arbitrage opportunities across protocols.</p>
+                </div>
+            </div>
+
+            <div class="project-alt reverse">
+                <div class="project-visual">
+                    <div class="project-icon">🎓</div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Leadership</span>
+                        <span class="tech-badge">Education</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Boiler Blockchain Founder</h3>
+                    <p>Co-founded and led Purdue's first blockchain club as President, scaling from 0 to 150+ students in 
+                    the first semester. Organized workshops, hackathons, and industry speaker events.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="content-section dark-section">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="credentials-hall">
+                <div class="credential-column">
+                    <div class="credential-icon">🎓</div>
+                    <h3 class="credential-title">Bachelor of Science in Economics</h3>
+                    <p class="credential-institution">Purdue University</p>
+                    <p class="credential-date">Aug 2019 – Dec 2023</p>
+                    <div class="credential-divider"></div>
+                    <p class="credential-details">
+                        Econometrics • Management & Information Systems • Data Visualization and Inference
+                    </p>
+                </div>
+                <div class="credential-column">
+                    <div class="credential-icon">📜</div>
+                    <h3 class="credential-title">Series 7 License</h3>
+                    <p class="credential-institution">FINRA</p>
+                    <p class="credential-date">May 2024</p>
+                    <div class="credential-divider"></div>
+                    <p class="credential-details">
+                        CRD# 6627 • General Securities Representative
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="gothic-section dark-section">
-            <h2 class="section-title">Portfolio & Projects</h2>
-            <div class="stained-glass-grid">
-                <div class="glass-panel blue-glass">
-                    <div class="panel-content">
-                        <h3 class="panel-title">Bitcoin Analytics Dashboard</h3>
-                        <p class="panel-description">
-                            A comprehensive analytics platform for Bitcoin data visualization and insights. 
-                            Illuminating the blockchain with powerful analytics tools.
-                        </p>
-                        <a href="https://bowless-wilton-unsupportably.ngrok-free.dev/" target="_blank" class="gothic-button">
-                            <span>Explore Dashboard</span>
-                        </a>
+        <!-- Content Section -->
+        <section id="content" class="content-section">
+            <h2 class="section-title">Published Content</h2>
+            
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="content-meta">
+                        <span class="content-type">Case Study</span>
+                        <span class="content-date">Boiler Blockchain</span>
                     </div>
+                    <h3 class="content-heading">Industry Case Study: Uniswap</h3>
+                    <p class="content-excerpt">
+                        An in-depth analysis of Uniswap's architecture and impact on decentralized finance. 
+                        Exploring the mechanisms that power one of DeFi's most influential protocols.
+                    </p>
+                    <a href="https://boilerblockchain.medium.com/industry-case-study-uniswap-b0293ec44ef2" 
+                       target="_blank" class="content-link">
+                        Read Article →
+                    </a>
                 </div>
 
-                <div class="glass-panel purple-glass">
-                    <div class="panel-content">
-                        <h3 class="panel-title">MEV Analysis Tools</h3>
-                        <p class="panel-description">
-                            Advanced tools for analyzing Maximum Extractable Value in blockchain transactions. 
-                            Multiple projects exploring the depths of MEV strategies.
-                        </p>
-                        <div class="project-links">
-                            <span class="tech-badge">Python</span>
-                            <span class="tech-badge">Ethereum</span>
-                            <span class="tech-badge">Analytics</span>
-                        </div>
+                <div class="content-card">
+                    <div class="content-meta">
+                        <span class="content-type">Technical</span>
+                        <span class="content-date">Boiler Blockchain</span>
                     </div>
+                    <h3 class="content-heading">Liquity Protocol Deep Dive</h3>
+                    <p class="content-excerpt">
+                        Technical analysis of Liquity's algorithmic stablecoin system, exploring stability mechanisms, 
+                        liquidation processes, and the role of LQTY governance tokens.
+                    </p>
+                    <a href="https://medium.com/@boilerblockchain/liquity-protocol-deep-dive" 
+                       target="_blank" class="content-link">
+                        Read Article →
+                    </a>
                 </div>
 
-                <div class="glass-panel amber-glass">
-                    <div class="panel-content">
-                        <h3 class="panel-title">Smart Contract Development</h3>
-                        <p class="panel-description">
-                            ERC20 tokens, NFT systems, and decentralized applications. 
-                            Building the pillars of tomorrow's decentralized economy.
-                        </p>
-                        <div class="project-links">
-                            <span class="tech-badge">Solidity</span>
-                            <span class="tech-badge">Hardhat</span>
-                            <span class="tech-badge">Web3</span>
-                        </div>
+                <div class="content-card">
+                    <div class="content-meta">
+                        <span class="content-type">Industry</span>
+                        <span class="content-date">Boiler Blockchain</span>
                     </div>
+                    <h3 class="content-heading">Akiverse: Web3 Gaming Innovation</h3>
+                    <p class="content-excerpt">
+                        Examining Akiverse's approach to blockchain gaming, analyzing token economics, 
+                        play-to-earn mechanics, and sustainable gaming ecosystem design.
+                    </p>
+                    <a href="https://medium.com/@boilerblockchain/akiverse-web3-gaming" 
+                       target="_blank" class="content-link">
+                        Read Article →
+                    </a>
                 </div>
             </div>
-        </section>
 
-        <!-- Writings Section -->
-        <section id="writings" class="gothic-section">
-            <div class="stone-frame">
-                <h2 class="section-title">Writings & Insights</h2>
-                <div class="manuscript-container">
-                    <div class="manuscript-item">
-                        <div class="illuminated-letter">U</div>
-                        <div class="manuscript-content">
-                            <h3>Industry Case Study: Uniswap</h3>
-                            <p>
-                                An in-depth analysis of Uniswap's architecture and impact on decentralized finance. 
-                                Written for Boiler Blockchain, exploring the mechanisms that power one of DeFi's 
-                                most influential protocols.
-                            </p>
-                            <a href="https://boilerblockchain.medium.com/industry-case-study-uniswap-b0293ec44ef2" 
-                               target="_blank" class="manuscript-link">
-                                Read the Full Study →
-                            </a>
-                        </div>
-                    </div>
+            <div class="podcast-embed">
+                <h3 class="section-subtitle">Listen: DeFi Discussions</h3>
+                <p class="podcast-description">Conversations on blockchain technology, DeFi protocols, and crypto markets</p>
+                <div class="spotify-container">
+                    <iframe style="border-radius:12px" 
+                            src="https://open.spotify.com/embed/show/3L2fhqj9PuiwztZdamjg0W?utm_source=generator&theme=0" 
+                            width="100%" 
+                            height="352" 
+                            frameBorder="0" 
+                            allowfullscreen="" 
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                            loading="lazy">
+                    </iframe>
                 </div>
             </div>
         </section>
 
         <!-- Connect Section -->
-        <section id="contact" class="gothic-section dark-section">
+        <section id="contact" class="content-section dark-section">
             <h2 class="section-title">Connect & Follow</h2>
             <div class="pillar-grid">
                 <a href="https://www.youtube.com/channel/UCIKcIjJHTc9QfsULSZ2nM0w?sub_confirmation=1" 
@@ -157,6 +384,17 @@
                     </div>
                 </a>
 
+                <a href="https://github.com/matthewfarrow" target="_blank" class="pillar-link">
+                    <div class="pillar">
+                        <div class="pillar-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <span class="pillar-text">GitHub</span>
+                    </div>
+                </a>
+
                 <a href="https://medium.com/@matt_farrow" target="_blank" class="pillar-link">
                     <div class="pillar">
                         <div class="pillar-icon">
@@ -184,10 +422,10 @@
     </main>
 
     <!-- Footer -->
-    <footer class="cathedral-footer">
+    <footer class="main-footer">
         <div class="footer-arch"></div>
         <p class="footer-text">
-            Built with reverence for the craft • Matt Farrow © 2025
+            Matt Farrow • Austin, TX • 1mattfarrow@gmail.com • © 2025
         </p>
     </footer>
 
