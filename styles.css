@@ -409,6 +409,17 @@ body {
     margin-bottom: 1rem;
 }
 
+.project-content h3 a {
+    color: var(--gold-accent);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-content h3 a:hover {
+    color: var(--gold-light);
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
 .project-content p {
     font-size: 1.15rem;
     line-height: 1.8;
@@ -693,7 +704,9 @@ body {
     }
     
     .content-grid {
+        grid-template-columns: 1fr;
         padding: 0 1rem;
+        gap: 1.5rem;
     }
     
     .credentials-hall {
