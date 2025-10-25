@@ -1,3 +1,94 @@
+/* Top Navigation Bar */
+.top-nav {
+    width: 100%;
+    background: rgba(42, 42, 42, 0.98);
+    border-bottom: 1px solid var(--gold-accent);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.nav-logo {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    color: var(--gold-accent);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+}
+.nav-links li a {
+    color: var(--parchment);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: var(--font-title);
+    transition: color 0.2s;
+}
+.nav-links li a:hover {
+    color: var(--gold-accent);
+}
+.nav-mobile-menu {
+    display: none;
+}
+.nav-hamburger {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: var(--parchment);
+    position: relative;
+}
+.nav-hamburger::before,
+.nav-hamburger::after {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    background: var(--parchment);
+    transition: 0.3s;
+}
+.nav-hamburger::before {
+    top: -8px;
+}
+.nav-hamburger::after {
+    top: 8px;
+}
+
+@media (max-width: 900px) {
+    .top-nav {
+        padding: 0.5rem 1rem;
+    }
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 56px;
+        left: 0;
+        width: 100vw;
+        background: rgba(42, 42, 42, 0.98);
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid var(--gold-accent);
+        z-index: 999;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-mobile-menu {
+        display: block;
+    }
+}
+
+body {
+    padding-top: 56px;
+}
 /* Gothic Portfolio - Fixed Spacing */
 
 :root {
