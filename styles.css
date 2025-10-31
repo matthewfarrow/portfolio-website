@@ -21,15 +21,57 @@
 }
 .nav-links {
     list-style: none;
-        font-family: var(--font-title), var(--font-body), serif;
+    display: flex;
+    align-items: center;
     gap: 2rem;
     margin: 0;
+    padding: 0;
 }
-    .tagline, .section-title, .stat-label, .stat-number, .metric, .credential-title, .credential-details, .content-heading, .content-excerpt, .pillar-text, h1, h2, h3, h4, h5, h6, a, p, li, span, .nav-links li a {
-        font-family: var(--font-title), var(--font-body), serif;
-    font-size: 1.1rem;
+
+.nav-links li a {
+    color: var(--parchment);
+    text-decoration: none;
+    font-size: 1rem;
     font-family: var(--font-title);
-    transition: color 0.2s;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: var(--gold-accent);
+}
+
+.nav-mobile-menu {
+    display: none;
+}
+
+.nav-hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--gold-accent);
+    position: relative;
+    transition: all 0.3s;
+}
+
+.nav-hamburger::before,
+.nav-hamburger::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: var(--gold-accent);
+    transition: all 0.3s;
+}
+
+.nav-hamburger::before {
+    top: -8px;
+}
+
+.nav-hamburger::after {
+    bottom: -8px;
+}
+
+@media (max-width: 768px) {
     .nav-links {
         display: none;
         position: absolute;
@@ -41,19 +83,38 @@
         gap: 1.5rem;
         padding: 1.5rem 0;
         border-bottom: 1px solid var(--gold-accent);
-        z-index: 999;
+        z-index: 998;
     }
+    
     .nav-links.active {
         display: flex;
     }
+    
     .nav-mobile-menu {
         display: block;
+    }
+    
+    .social-banner {
+        top: auto;
+        position: relative;
+        margin-top: 56px;
+    }
+    
+    body {
+        padding-top: 56px;
     }
 }
 
 body {
-    padding-top: 56px;
+    padding-top: 120px;
 }
+
+@media (min-width: 769px) {
+    body {
+        padding-top: 120px;
+    }
+}
+
 /* Gothic Portfolio - Fixed Spacing */
 
 :root {
@@ -90,6 +151,11 @@ body {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    right: 0;
+    z-index: 999;
 }
 
 .social-icon {
@@ -199,38 +265,6 @@ body {
     opacity: 0.8;
 }
 
-/* Navigation */
-.main-nav {
-    position: sticky;
-    top: 0;
-    background: rgba(42, 42, 42, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 2px solid var(--gold-accent);
-    z-index: 100;
-}
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    padding: 1.5rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.nav-link {
-    color: var(--parchment);
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 500;
-    transition: color 0.3s;
-    letter-spacing: 0.05em;
-}
-
-.nav-link:hover {
-    color: var(--gold-accent);
-}
 
 /* Social Proof Strip */
 .proof-section {
