@@ -824,6 +824,29 @@ body {
         font-size: 2.5rem;
     }
     
+    .hero-text .tagline {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+    
+    .hero-ctas {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hero-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-box {
+        padding: 1.5rem;
+    }
+    
     .split-section {
         grid-template-columns: 1fr;
         padding: 0 1rem;
@@ -856,6 +879,21 @@ body {
     
     .pillar-grid {
         padding: 0 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-info {
+        padding: 1rem;
+    }
+    
+    .contact-info a {
+        font-size: 1rem !important;
+        word-break: break-word;
+    }
+    
+    .nav-links {
+        font-size: 0.9rem;
+        gap: 1rem;
     }
 }
 
