@@ -739,6 +739,34 @@ body {
 }
 
 /* Connect - CENTERED */
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 2rem;
+}
+
+.contact-item {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-link {
+    color: var(--gold-accent);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s;
+    display: inline-block;
+}
+
+.contact-link:hover {
+    color: var(--gold-light);
+}
+
 .pillar-grid {
     max-width: 1200px;
     margin: 0 auto;
@@ -886,8 +914,8 @@ body {
         padding: 1rem;
     }
     
-    .contact-info a {
-        font-size: 1rem !important;
+    .contact-link {
+        font-size: 1rem;
         word-break: break-word;
     }
     
