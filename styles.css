@@ -184,11 +184,51 @@ body {
     font-weight: 300;
     letter-spacing: 0.1em;
     line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.hero-ctas {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s;
+    display: inline-block;
+    border: 2px solid var(--gold-accent);
+}
+
+.cta-button.primary {
+    background: var(--gold-accent);
+    color: var(--stone-dark);
+}
+
+.cta-button.primary:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+.cta-button.secondary {
+    background: transparent;
+    color: var(--gold-accent);
+}
+
+.cta-button.secondary:hover {
+    background: rgba(212, 175, 55, 0.1);
+    transform: translateY(-2px);
 }
 
 .hero-stats {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1rem;
 }
 
