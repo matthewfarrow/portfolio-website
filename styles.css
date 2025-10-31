@@ -94,25 +94,6 @@
         display: block;
     }
     
-    .social-banner {
-        top: auto;
-        position: relative;
-        margin-top: 56px;
-    }
-    
-    body {
-        padding-top: 56px;
-    }
-}
-
-body {
-    padding-top: 120px;
-}
-
-@media (min-width: 769px) {
-    body {
-        padding-top: 120px;
-    }
 }
 
 /* Gothic Portfolio - Fixed Spacing */
@@ -143,33 +124,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Social Banner */
-.social-banner {
-    background: rgba(42, 42, 42, 0.9);
-    border-bottom: 1px solid var(--gold-accent);
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    position: fixed;
-    top: 56px;
-    left: 0;
-    right: 0;
-    z-index: 999;
-}
-
-.social-icon {
-    width: 24px;
-    height: 24px;
-    fill: var(--parchment);
-    transition: all 0.3s;
-    opacity: 0.7;
-}
-
-.social-icon:hover {
-    fill: var(--gold-accent);
-    opacity: 1;
-}
 
 /* Hero Header */
 .hero-header {
@@ -180,6 +134,7 @@ body {
     background: linear-gradient(135deg, var(--stone-dark), var(--stone-medium));
     border-bottom: 4px solid var(--gold-accent);
     padding: 4rem 2rem;
+    margin-top: 56px;
 }
 
 .glass-overlay {
