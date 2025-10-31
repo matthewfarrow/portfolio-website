@@ -1,28 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <defs>
-    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f4d03f;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#d4af37;stop-opacity:1" />
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
-      <feMerge> 
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Black background -->
+  <rect width="100" height="100" rx="12" fill="#1a1a1a"/>
   
-  <!-- Dark background -->
-  <rect width="32" height="32" rx="4" fill="#1a1a1a"/>
-  
-  <!-- Letter M -->
-  <path d="M3 6v20h3V14l3 8h2l3-8v12h3V6h-3l-4 10L6 6H3z" 
-        fill="url(#goldGradient)" 
-        filter="url(#glow)"/>
-  
-  <!-- Letter F -->  
-  <path d="M18 6v20h3v-7h4v-3h-4v-4h5V6h-8z" 
-        fill="url(#goldGradient)" 
-        filter="url(#glow)"/>
+  <!-- Centered MF text in gold -->
+  <text x="50" y="65" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#d4af37" text-anchor="middle" letter-spacing="2">MF</text>
 </svg>
