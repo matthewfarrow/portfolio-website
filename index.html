@@ -1,505 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matt Farrow</title>
-    <meta name="description" content="Matt Farrow - Crypto BD & Product Builder | Built Tropic Vote & the Hydrex Revenue Tracker | $2.72M Pipeline Sourced">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
-    <link rel="shortcut icon" type="image/svg+xml" href="favicon.svg?v=2">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matt Farrow</title>
+<meta name="description" content="Matt Farrow. I sold enterprise software, then learned the mechanics and built the DeFi products I sell. Tropic Vote, the Hydrex Revenue Tracker, and Tropic Tools, live on Base.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=3">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.className="js";</script>
 </head>
 <body>
-    <!-- Top Navigation Bar -->
-    <nav class="top-nav">
-        <div class="nav-logo">MF</div>
-        <ul class="nav-links">
-            <li><a href="#bio">Bio</a></li>
-            <li><a href="#career">Career</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#content">Content</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="nav-mobile-menu">
-            <button id="nav-toggle" aria-label="Open menu">
-                <span class="nav-hamburger"></span>
-            </button>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav-id" href="#top">Matt Farrow <span>/ Austin, TX</span></a>
+    <ul class="nav-links">
+      <li><a href="#tropic" data-nav><i>01</i>Tropic Vote</a></li>
+      <li><a href="#shipped" data-nav><i>02</i>Shipped</a></li>
+      <li><a href="#before" data-nav><i>03</i>Before</a></li>
+      <li><a href="#origin" data-nav><i>04</i>Origin</a></li>
+      <li><a href="#writing" data-nav><i>05</i>Writing</a></li>
+      <li><a href="#contact" data-nav>Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="label eyebrow">Independent builder &middot; Hydrex ecosystem &middot; Base</p>
+
+    <h1>Matt <em>Farrow</em></h1>
+
+    <p class="standfirst">I sold enterprise software and got tired of pitching things I could not fix. So I learned the mechanics, and now I build the DeFi products I sell. <em>Both halves, same person.</em></p>
+
+    <p class="note">Selling and building turned out to be the same job. Both come down to understanding a mechanism well enough that someone believes you. The difference is that when you build it, the numbers are on-chain and nobody has to take your word.</p>
+
+    <div class="tape">
+      <div class="tape-cell">
+        <div class="fig">9,579,715</div>
+        <p class="cap">Earning power delegated to Tropic Vote</p>
+        <p class="src">Live on Base. veHYDX holders, non-custodial.</p>
+      </div>
+      <div class="tape-cell">
+        <div class="fig">+50%</div>
+        <p class="cap">All-time efficiency vs the average voter</p>
+        <p class="src">Rewards-weighted, reconciled on-chain across every closed epoch.</p>
+      </div>
+      <div class="tape-cell">
+        <div class="fig">$281,953</div>
+        <p class="cap">Partner revenue tracked</p>
+        <p class="src">23 Hydrex partners. Bribes and fees, checked against the epoch sheets.</p>
+      </div>
+    </div>
+    <div class="tape4">
+      <div class="fig">12,801</div>
+      <p class="cap">Cold calls placed at Motive</p>
+      <p class="src">The other half of the resume.</p>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- 01 -->
+<section class="sec" id="tropic">
+  <div class="mark"><span>01<b>Tropic Vote</b></span></div>
+  <div class="wrap sec-inner">
+    <div class="sec-hd">
+      <h2>The thing I actually run</h2>
+      <p class="label">Live on Base</p>
+    </div>
+
+    <div class="panel">
+      <div class="panel-hd">
+        <span>Tropic Vote</span>
+        <span>Live</span>
+        <span>Base</span>
+        <a class="go" href="https://tropic.vote" target="_blank" rel="noopener">tropic.vote &#8599;</a>
+      </div>
+
+      <div class="panel-b">
+        <p class="lede">veHYDX holders delegate earning power, and nothing else. The NFT stays in the wallet it started in, and it stays there the entire time. Every epoch the protocol reads the bribe and fee surface across every gauge, routes that earning power to the pools with the best marginal expected value, votes, and claims. Holders keep 95 percent of what comes back. The fee is the other five.</p>
+        <p>The hard part was never the optimizer. It was proving the edge was real, epoch by epoch, against the on-chain record, instead of asking anyone to trust a number in a dashboard.</p>
+        <p>I wrote it, I run it, and I sell it.</p>
+      </div>
+
+      <div class="panel-b">
+        <div class="steps">
+          <div class="step">
+            <span class="step-n">01</span>
+            <p><b>Delegate earning power.</b> One approval. The token itself is not transferred, and cannot be.</p>
+          </div>
+          <div class="step">
+            <span class="step-n">02</span>
+            <p><b>Read the surface.</b> Bribes and fees across every gauge, every epoch, before the vote closes.</p>
+          </div>
+          <div class="step">
+            <span class="step-n">03</span>
+            <p><b>Route by marginal EV.</b> Allocation goes where the next unit of vote is worth the most, not where the headline APR is loudest.</p>
+          </div>
+          <div class="step">
+            <span class="step-n">04</span>
+            <p><b>Vote and auto-claim.</b> It runs itself weekly. You keep 95 percent and can leave whenever you want.</p>
+          </div>
         </div>
-    </nav>
+      </div>
 
-    <!-- Hero Header -->
-    <header class="hero-header" id="bio">
-        <div class="hero-grid">
-            <div class="hero-text">
-                <h1>Matt Farrow</h1>
-                <p class="tagline">Crypto BD who ships the products he pitches. Sourced $2.72M in enterprise pipeline, then built Tropic Vote and the Hydrex Revenue Tracker to prove the tech out myself.</p>
-                <div class="hero-ctas">
-                    <a href="#projects" class="cta-button secondary">Projects</a>
-                    <a href="#contact" class="cta-button secondary">Get in Touch</a>
-                </div>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-box">
-                    <span class="stat-number">$2.72M</span>
-                    <span class="stat-label">Pipeline Sourced</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-number">12,801</span>
-                    <span class="stat-label">Cold Calls</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-number">$1.93B</span>
-                    <span class="stat-label">AUM Onboarded</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-number">1,900%</span>
-                    <span class="stat-label">Crypto Returns</span>
-                </div>
-            </div>
+      <div class="panel-b" data-draw>
+        <div class="cmp-row">
+          <div class="cmp-k"><span>Network average voter</span><span>100</span></div>
+          <div class="cmp-track"><div class="cmp-fill cmp-fill--avg" style="--w:70.9%"></div></div>
         </div>
-    </header>
+        <div class="cmp-row">
+          <div class="cmp-k"><b>Delegated to Tropic Vote</b><b>141</b></div>
+          <div class="cmp-track"><div class="cmp-fill cmp-fill--tv" style="--w:100%"></div></div>
+        </div>
+        <p class="src">Reward per vote, epoch 42, indexed. Network average voter = 100. Not a backtest, not a projection.</p>
+      </div>
 
-    <main>
-        <!-- Bio Section -->
-        <section id="bio" class="content-section">
-            <h2 class="section-title">About Me</h2>
-            <div class="bio-container">
-                <div class="split-left">
-                    <p>
-                        My interest in trading and investing started early. I founded the investment club at San Clemente High School and led it for three years. During those same high school years, I built an Ethereum mining rig and spent lunch periods working on automated crypto trading bots with friends. That hands-on experience with blockchain technology and markets shaped everything that followed.
-                    </p>
-                    <p>
-                        At Purdue, I continued that momentum by co-founding Boiler Blockchain and helping develop the university's first undergraduate blockchain course. While building on the technical side, I also started managing a portfolio for friends, which taught me how to explain complex strategies in ways that actually made sense to people.
-                    </p>
-                    <p>
-                        That blend of technical depth and clear communication is what I bring to business development now. At Motive, I sourced $2.72M in pipeline and hit 197% of target in just three months, not because I'm great at cold calling (though I made 12,801 of them), but because I can translate how blockchain tech actually creates value for enterprises. At VastAdvisor, I onboarded $1.93B in AUM by building that same trust and technical credibility with institutional clients.
-                    </p>
-                    <p>
-                        That's the approach I bring to crypto partnerships now. I designed and built Tropic Vote, a non-custodial vote-optimization protocol for Hydrex's ve(3,3) governance system, plus the Hydrex Revenue Tracker, which reconciles bribe and fee revenue across all 23 partners in the ecosystem. Understanding the tech isn't a nice-to-have in this business, it's the foundation of every deal, and now it's also the product.
-                    </p>
-                    
-                    <div class="skills-grid">
-                        <span class="skill-tag">Enterprise Sales</span>
-                        <span class="skill-tag">Blockchain</span>
-                        <span class="skill-tag">DeFi</span>
-                        <span class="skill-tag">Fintech</span>
-                        <span class="skill-tag">Bitcoin</span>
-                        <span class="skill-tag">Ethereum</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Data Analysis</span>
-                        <span class="skill-tag">Smart Contract Integration</span>
-                    </div>
-                </div>
-                
-                <!-- Removed duplicate education/certification block. See Education section below. -->
-            </div>
-        </section>
+      <div class="panel-b">
+        <div class="two">
+          <div>
+            <p class="label">Terms</p>
+            <div class="kv"><span class="k">you delegate</span><span class="dots"></span><span class="v">earning power only</span></div>
+            <div class="kv"><span class="k">the NFT lives</span><span class="dots"></span><span class="v">in your wallet</span></div>
+            <div class="kv"><span class="k">exit</span><span class="dots"></span><span class="v">any time</span></div>
+            <div class="kv"><span class="k">votes and claims</span><span class="dots"></span><span class="v">every epoch</span></div>
+            <div class="kv"><span class="k">custody</span><span class="dots"></span><span class="v">none</span></div>
+            <div class="kv"><span class="k">chain</span><span class="dots"></span><span class="v">Base</span></div>
+          </div>
+          <div>
+            <p class="label">Position</p>
+            <dl class="p-facts">
+              <div><dt>Earning power delegated</dt><dd>9,579,715</dd></div>
+              <div><dt>Reward per vote vs network, epoch 42</dt><dd>+41%</dd></div>
+              <div><dt>Efficiency vs average voter, all time</dt><dd>+50%</dd></div>
+              <div><dt>Rewards captured, all time</dt><dd>$972</dd></div>
+              <div><dt>Holder share</dt><dd>95%</dd></div>
+              <div><dt>Protocol fee</dt><dd>5%</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <!-- Experience Section -->
-    <section id="career" class="dark-section">
-            <h2 class="section-title">Professional Journey</h2>
-            <div class="timeline-horizontal">
-                <div class="timeline-card">
-                    <div class="timeline-date">2026 – Present</div>
-                    <div class="timeline-body">
-                        <h3 class="timeline-title">Independent Product Builder</h3>
-                        <p class="timeline-company">Hydrex Ecosystem • Remote</p>
-                        <div class="timeline-metrics">
-                            <div class="metric"><strong>9.5M+</strong> Earning Power Delegated</div>
-                            <div class="metric"><strong>+50%</strong> Vote Efficiency vs. Average, All-Time</div>
-                            <div class="metric"><strong>$281,953</strong> Partner Revenue Tracked</div>
-                            <div class="metric"><strong>23</strong> Partners Covered</div>
-                        </div>
-                        <p class="timeline-description">
-                            Designed and shipped Tropic Vote, a non-custodial vote-optimization protocol for Hydrex's ve(3,3) governance system, alongside the Hydrex Revenue Tracker and Tropic Tools analytics suite. Own the full product surface: smart contract integration, delegation and claim flows, and the revenue reporting the Hydrex team uses to track partner performance.
-                        </p>
-                    </div>
-                </div>
+<!-- 02 -->
+<section class="sec" id="shipped">
+  <div class="mark"><span>02<b>Shipped</b></span></div>
+  <div class="wrap sec-inner">
+    <div class="sec-hd">
+      <h2>Three more things, all live</h2>
+      <p class="label">All public. All linked.</p>
+    </div>
 
-                <div class="timeline-card">
-                    <div class="timeline-date">Oct 2024 – Aug 2025</div>
-                    <div class="timeline-body">
-                        <h3 class="timeline-title">Senior SDR, Enterprise</h3>
-                        <p class="timeline-company">Motive • Austin, TX</p>
-                        <div class="timeline-metrics">
-                            <div class="metric"><strong>$2.72M</strong> Pipeline Sourced</div>
-                            <div class="metric"><strong>12,801</strong> Cold Calls</div>
-                            <div class="metric"><strong>83%</strong> Meeting Show Rate</div>
-                            <div class="metric"><strong>197%</strong> of Target Achieved</div>
-                            <div class="metric"><strong>3 Months</strong> to Promotion</div>
-                        </div>
-                    </div>
-                </div>
+    <div class="also">
+      <div>
+        <h3>Hydrex Revenue Tracker</h3>
+        <p>Partners kept asking what they had actually earned, and the honest answer was that nobody had added it up. So I added it up. It reconciles on-chain settlement against the partner epoch sheets, which is how you find the money that quietly went uncounted.</p>
+        <a class="go" href="https://hydrex-revenue-tracker.vercel.app/" target="_blank" rel="noopener">hydrex-revenue-tracker.vercel.app &#8599;</a>
+      </div>
+      <div data-draw>
+        <div class="hl">$281,953<sup class="cmark">1</sup></div>
+        <div class="split">
+          <div class="split-b" style="--w:88.9%"></div>
+          <div class="split-f" style="--w:11.1%"></div>
+        </div>
+        <div class="split-key"><span>Bribes $250,714</span><span>Fees $31,238</span></div>
+        <dl class="p-facts">
+          <div><dt>Partners</dt><dd>23</dd></div>
+          <div><dt>Best month</dt><dd>Feb 2026, $72,285</dd></div>
+        </dl>
+        <div class="ticks">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <p class="src">23 partners reconciled.</p>
+      </div>
+    </div>
 
-                <div class="timeline-card">
-                    <div class="timeline-date">Jan 2025 – Aug 2025</div>
-                    <div class="timeline-body">
-                        <h3 class="timeline-title">SDR, Institutional Accounts</h3>
-                        <p class="timeline-company">VastAdvisor.ai • Austin, TX</p>
-                        <div class="timeline-metrics">
-                            <div class="metric"><strong>$1.93B</strong> AUM Onboarded</div>
-                            <div class="metric"><strong>85%+</strong> Conversion Rate</div>
-                            <div class="metric"><strong>0%</strong> Client Churn</div>
-                        </div>
-                    </div>
-                </div>
+    <aside class="corr">
+      <div class="corr__l"><span class="corr__n">1</span> Correction</div>
+      <p>$250,714 + $31,238 is $281,952. The tracker reports $281,953. One dollar. I have not chased it down, and I am not going to quietly round it away.</p>
+    </aside>
 
-                <div class="timeline-card">
-                    <div class="timeline-date">Jun 2022 – Sep 2023</div>
-                    <div class="timeline-body">
-                        <h3 class="timeline-title">Lecturer & Course Developer</h3>
-                        <p class="timeline-company">Purdue University & Cartesi</p>
-                        <div class="timeline-metrics">
-                            <div class="metric"><strong>1st</strong> Undergrad Blockchain Course</div>
-                            <div class="metric"><strong>5+</strong> Lectures Delivered</div>
-                            <div class="metric"><strong>Cartesi</strong> Rollups Workshop</div>
-                        </div>
-                        <p class="timeline-description">
-                            Co-authored and delivered Purdue's first undergraduate blockchain course, covering cryptography, consensus mechanisms, DAOs, and Bitcoin. Secured Cartesi contract for optimistic rollups workshop.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="also">
+      <div>
+        <h3>Tropic Tools</h3>
+        <p>One question, answered across every ve token I could get clean data on: what a ve token bought at market actually pays you to vote. Not emissions, not TVL, the number a voter takes home.</p>
+        <p>I built this before Tropic Vote had a lead, and shipped it anyway. It just happens to win now.</p>
+        <a class="go" href="https://tropic-tools.vercel.app" target="_blank" rel="noopener">tropic-tools.vercel.app &#8599;</a>
+      </div>
+      <div data-draw>
+        <div class="rank-row">
+          <div class="rank-k"><b>veHYDX + Tropic Vote</b><b>45.6%</b></div>
+          <span class="rank-track"><span class="rank-fill rank-fill--lead" style="--w:100%"></span></span>
+        </div>
+        <div class="rank-row">
+          <div class="rank-k"><span>veHYDX, plain</span><span>30.4%</span></div>
+          <span class="rank-track"><span class="rank-fill rank-fill--rest" style="--w:66.7%"></span></span>
+        </div>
+        <div class="rank-row">
+          <div class="rank-k"><span>veAERO</span><span>11.2%</span></div>
+          <span class="rank-track"><span class="rank-fill rank-fill--rest" style="--w:24.6%"></span></span>
+        </div>
+        <div class="rank-row">
+          <div class="rank-k"><span>veVELO</span><span>6.2%</span></div>
+          <span class="rank-track"><span class="rank-fill rank-fill--rest" style="--w:13.6%"></span></span>
+        </div>
+        <p class="src">Average voter APR, same math for every row, nothing annualized off a good week. veAERO and veVELO are older, larger, and less emission-heavy, so read them as context, not as a scoreboard. The comparison that matters is the first two rows: voting through Tropic Vote is worth +15.2 points of APR over holding veHYDX and voting yourself.</p>
+      </div>
+    </div>
 
-        <!-- Projects Section -->
-        <section id="projects" class="content-section">
-            <h2 class="section-title">Technical Projects</h2>
+    <div class="also">
+      <div>
+        <h4>Cypherpunk Library</h4>
+        <a class="go" href="https://cypherpunk-library-eubgrt50e-matt-farrows-projects.vercel.app/index.html" target="_blank" rel="noopener">Open the library &#8599;</a>
+      </div>
+      <div>
+        <p>A walkthrough of the founding cypherpunk documents, plus the privacy hygiene that follows from them. Crypto keeps forgetting why it was built. This is my copy of the receipts.</p>
+      </div>
+    </div>
 
-            <div class="project-alt">
-                <div class="project-visual">
-                    <span class="visual-label">DeFi Protocol</span>
-                    <div class="project-stat">
-                        <span class="stat-figure">+50%</span>
-                        <span class="stat-caption">vote efficiency vs. average, all-time</span>
-                    </div>
-                    <div class="project-stat secondary">
-                        <span class="stat-figure">9.5M+</span>
-                        <span class="stat-caption">earning power delegated</span>
-                    </div>
-                    <div class="tech-stack">
-                        <span class="tech-badge">Solidity</span>
-                        <span class="tech-badge">Vote Optimization</span>
-                        <span class="tech-badge">Base Network</span>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>Tropic Vote</h3>
-                    <p>Non-custodial vote-optimization protocol for Hydrex's ve(3,3) governance system. veHYDX holders delegate earning power only, their NFT never leaves their wallet, and Tropic Vote auto-votes and auto-claims every epoch to route earning power toward the highest-yield pools. Currently coordinating 9.5M+ earning power with a realized efficiency edge over the average voter, reconciled on-chain across every closed epoch.</p>
-                    <a href="https://tropic.vote" target="_blank" class="project-link">Explore Tropic Vote →</a>
-                </div>
-            </div>
+    <div class="also">
+      <div>
+        <h4>Boiler Blockchain</h4>
+        <a class="go" href="https://www.boilerblockchain.org/" target="_blank" rel="noopener">boilerblockchain.org &#8599;</a>
+      </div>
+      <div class="one-stat">
+        <div class="fig">0 to 150+</div>
+        <p class="cap">Students, first semester</p>
+        <p>Purdue's first blockchain club. I co-founded it and was its president. Workshops, hackathons, speakers. It is still running without me.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <div class="project-alt reverse">
-                <div class="project-visual">
-                    <span class="visual-label">Analytics Dashboard</span>
-                    <div class="project-stat">
-                        <span class="stat-figure">$281,953</span>
-                        <span class="stat-caption">partner revenue tracked</span>
-                    </div>
-                    <div class="project-stat secondary">
-                        <span class="stat-figure">23</span>
-                        <span class="stat-caption">partners covered</span>
-                    </div>
-                    <div class="tech-stack">
-                        <span class="tech-badge">Next.js</span>
-                        <span class="tech-badge">Data Reconciliation</span>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>Hydrex Revenue Tracker</h3>
-                    <p>Standalone dashboard tracking bribe and fee revenue across every partner in the Hydrex ecosystem, reconciled between on-chain settlement and each partner's reported figures so nothing is undercounted. Used to monitor progress toward veHYDX holder revenue-share thresholds month over month.</p>
-                    <a href="https://hydrex-revenue-tracker.vercel.app/" target="_blank" class="project-link">Explore Revenue Tracker →</a>
-                </div>
-            </div>
+<!-- 03 -->
+<section class="sec" id="before">
+  <div class="mark"><span>03<b>Before</b></span></div>
+  <div class="wrap sec-inner">
+    <div class="sec-hd">
+      <h2>Before I built it, I sold it. Before that, I taught it.</h2>
+      <p class="label">Jun 2022 to Aug 2025</p>
+    </div>
 
-            <div class="project-alt">
-                <div class="project-visual">
-                    <span class="visual-label">DeFi Tool</span>
-                    <div class="tech-stack">
-                        <span class="tech-badge">Concentrated Liquidity</span>
-                        <span class="tech-badge">Uniswap V3</span>
-                        <span class="tech-badge">Base Network</span>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>Tangerine Trading</h3>
-                    <p>Automated management platform for concentrated liquidity positions on Uniswap V3. Rebalances positions as price moves out of range and uses volatility-aware liquidity segmentation to cut down on impermanent loss and manual position management. Built on Base for low gas costs.</p>
-                    <a href="https://tangerine.trading" target="_blank" class="project-link">Explore Tangerine Trading →</a>
-                </div>
-            </div>
+    <div class="row">
+      <div class="when">Oct 2024 to Aug 2025</div>
+      <div class="what">
+        <h3>Senior SDR, Enterprise</h3>
+        <p class="who">Motive</p>
+      </div>
+      <div>
+        <div class="stats">
+          <span class="chip">$2.72M pipeline sourced</span>
+          <span class="chip">197% of target</span>
+          <span class="chip">12,801 cold calls</span>
+          <span class="chip">83% meeting show rate</span>
+        </div>
+        <p>Eleven months, 12,801 cold calls, promoted to enterprise in three. The number I am actually proud of is the show rate, because it means the calls were worth taking.</p>
+      </div>
+    </div>
 
-            <div class="project-alt reverse">
-                <div class="project-visual">
-                    <span class="visual-label">Education Platform</span>
-                    <div class="tech-stack">
-                        <span class="tech-badge">Privacy</span>
-                        <span class="tech-badge">Web Dev</span>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>Cypherpunk Library</h3>
-                    <p>Educational web platform featuring a thematic walkthrough of foundational cypherpunk documents.
-                    Designed to teach privacy hygiene and the philosophical foundations of cryptocurrency through interactive
-                    exploration of seminal texts from cryptography pioneers and privacy advocates.</p>
-                    <a href="https://cypherpunk-library-eubgrt50e-matt-farrows-projects.vercel.app/index.html" target="_blank" class="project-link">Explore Library →</a>
-                </div>
-            </div>
+    <div class="row">
+      <div class="when">Jan 2025 to Aug 2025</div>
+      <div class="what">
+        <h3>SDR, Institutional Accounts</h3>
+        <p class="who">VastAdvisor.ai</p>
+      </div>
+      <div>
+        <div class="stats">
+          <span class="chip">$1.93B AUM on the platform<sup class="cmark">2</sup></span>
+          <span class="chip">5 institutional advisors</span>
+          <span class="chip">85%+ conversion</span>
+          <span class="chip">0% client churn</span>
+        </div>
+        <p>Enterprise software sales into institutions. Long cycles, real diligence, and the technical questions came from people who already knew the answer. Nobody signs one of these because you were charming.</p>
+      </div>
+    </div>
 
-            <div class="project-alt">
-                <div class="project-visual">
-                    <span class="visual-label">Student Organization</span>
-                    <div class="project-stat">
-                        <span class="stat-figure">150+</span>
-                        <span class="stat-caption">students, first semester</span>
-                    </div>
-                    <div class="tech-stack">
-                        <span class="tech-badge">Leadership</span>
-                        <span class="tech-badge">Education</span>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3>Boiler Blockchain Co-Founder</h3>
-                    <p>Co-founded and led Purdue's first blockchain club as President, scaling from 0 to 150+ students in
-                    the first semester. Organized workshops, hackathons, and industry speaker events.</p>
-                    <a href="https://www.boilerblockchain.org/" target="_blank" class="project-link">Visit Website →</a>
-                </div>
-            </div>
-        </section>
+    <aside class="corr">
+      <div class="corr__l"><span class="corr__n">2</span> Correction</div>
+      <p>Their assets, not mine. I did not gather or manage a dollar of it. I sold five institutional advisors the enterprise software they run <b>$1.93B</b> on, which is a different job and worth saying plainly.</p>
+    </aside>
 
-        <!-- Education Section -->
-        <section id="education" class="content-section dark-section">
-            <h2 class="section-title">Education & Certifications</h2>
-            <div class="credentials-hall">
-                <div class="credential-column">
-                    <div class="credential-mark">01</div>
-                    <h3 class="credential-title">Bachelor of Science in Economics</h3>
-                    <p class="credential-institution">Purdue University</p>
-                    <p class="credential-date">Aug 2019 – Dec 2023</p>
-                    <div class="credential-divider"></div>
-                    <p class="credential-details">
-                        Econometrics • Management & Information Systems • Data Visualization and Inference
-                    </p>
-                </div>
-                <div class="credential-column">
-                    <div class="credential-mark">02</div>
-                    <h3 class="credential-title">Series 7 License</h3>
-                    <p class="credential-institution">FINRA</p>
-                    <p class="credential-date">May 2024</p>
-                    <div class="credential-divider"></div>
-                    <p class="credential-details">
-                        CRD# 6627 • General Securities Representative
-                    </p>
-                </div>
-            </div>
-        </section>
+    <div class="row">
+      <div class="when">Jun 2022 to Sep 2023</div>
+      <div class="what">
+        <h3>Lecturer &amp; Course Developer</h3>
+        <p class="who">Purdue University &amp; Cartesi</p>
+      </div>
+      <div>
+        <div class="stats">
+          <span class="chip">1st undergrad blockchain course at Purdue</span>
+          <span class="chip">5+ lectures delivered</span>
+          <span class="chip">Cartesi contract secured</span>
+        </div>
+        <p>Co-authored and taught it: cryptography, consensus, DAOs, Bitcoin from first principles. I also brought in the Cartesi contract for an optimistic rollups workshop. Teaching a room of undergraduates why a mechanism works is the same skill as a discovery call, with a tougher audience.</p>
+      </div>
+    </div>
 
-        <!-- Content Section -->
-        <section id="content" class="content-section">
-            <h2 class="section-title">Published Content</h2>
-            
-            <div class="content-grid">
-                <div class="content-card">
-                    <div class="content-meta">
-                        <span class="content-type">Investment</span>
-                        <span class="content-date">Medium</span>
-                    </div>
-                    <h3 class="content-heading">Airdrops: The Seed for My Million Dollar Portfolio</h3>
-                    <p class="content-excerpt">
-                        How strategic participation in blockchain airdrops became the foundation of a seven-figure 
-                        crypto portfolio. A deep dive into airdrop strategy and execution.
-                    </p>
-                    <a href="https://medium.com/boilerblockchain/airdrops-the-seed-for-my-million-dollar-portfolio-79f14d2b6d06" 
-                       target="_blank" class="content-link">
-                        Read Article →
-                    </a>
-                </div>
+    <div class="creds">
+      <p>Purdue University &middot; BS Economics, Aug 2019 to Dec 2023 &middot; econometrics, management and information systems, data visualization and inference</p>
+      <p>FINRA Series 7 &middot; May 2024 &middot; General Securities Representative &middot; CRD# 6627</p>
+    </div>
+  </div>
+</section>
 
-                <div class="content-card">
-                    <div class="content-meta">
-                        <span class="content-type">Technical Guide</span>
-                        <span class="content-date">Medium</span>
-                    </div>
-                    <h3 class="content-heading">A Guide to Zero-Knowledge Rollups: A Blockchain Scaling Solution</h3>
-                    <p class="content-excerpt">
-                        Comprehensive guide exploring zero-knowledge rollups as a scaling solution for blockchain networks. 
-                        Covers technical mechanisms, implementation approaches, and their role in Ethereum scaling.
-                    </p>
-                    <a href="https://medium.com/@matt_farrow/a-guide-to-zero-knowledge-rollups-a-blockchain-scaling-solution-9ca021af5bc5" 
-                       target="_blank" class="content-link">
-                        Read Article →
-                    </a>
-                </div>
+<!-- 04 -->
+<section class="sec" id="origin">
+  <div class="mark"><span>04<b>Origin</b></span></div>
+  <div class="wrap sec-inner">
+    <div class="origin">
+      <p class="pull">I have been doing a version of this job since I was <em>sixteen</em>, in a high school cafeteria, for free.</p>
+      <div class="prose">
+        <p>I founded the investment club at San Clemente High School and led it for three years. I built an Ethereum mining rig in my bedroom. My friends and I spent lunch periods writing crypto trading bots that were, in hindsight, mostly bad.</p>
+        <p>At Purdue I co-founded <b>Boiler Blockchain</b> and helped build the university's first undergraduate blockchain course, while managing a small portfolio for friends who trusted me before there was much reason to. Crypto returns came in around <b>1,900%</b><sup class="cmark">3</sup>.</p>
+        <p>None of it was a plan. It was the only thing I ever wanted to read about, and it turned out that reading about something for ten years is a qualification.</p>
 
-                <div class="content-card">
-                    <div class="content-meta">
-                        <span class="content-type">Tutorial</span>
-                        <span class="content-date">YouTube</span>
-                    </div>
-                    <h3 class="content-heading">How to Bridge from Ethereum Mainnet to zkSync</h3>
-                    <p class="content-excerpt">
-                        Collaboration with Blockchain Education Network demonstrating zkSync Era bridging. 
-                        Step-by-step tutorial on using zkSync's Layer 2 scaling solution.
-                    </p>
-                    <a href="https://www.youtube.com/watch?v=vp1SxZ0ihNw" 
-                       target="_blank" class="content-link">
-                        Watch Tutorial →
-                    </a>
-                </div>
+        <aside class="corr">
+          <div class="corr__l"><span class="corr__n">3</span> Correction</div>
+          <p>I bought early and I held. Most of 1,900% is that, not skill. I am putting the number here because it is true, and the note here because the number on its own would flatter me.</p>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
 
-                <div class="content-card">
-                    <div class="content-meta">
-                        <span class="content-type">Case Study</span>
-                        <span class="content-date">Boiler Blockchain</span>
-                    </div>
-                    <h3 class="content-heading">Industry Case Study: Uniswap</h3>
-                    <p class="content-excerpt">
-                        An in-depth analysis of Uniswap's architecture and impact on decentralized finance. 
-                        Exploring the mechanisms that power one of DeFi's most influential protocols.
-                    </p>
-                    <a href="https://boilerblockchain.medium.com/industry-case-study-uniswap-b0293ec44ef2" 
-                       target="_blank" class="content-link">
-                        Read Article →
-                    </a>
-                </div>
+<!-- 05 -->
+<section class="sec" id="writing">
+  <div class="mark"><span>05<b>Writing</b></span></div>
+  <div class="wrap sec-inner">
+    <div class="sec-hd">
+      <h2>Explaining it is how I check that I understand it</h2>
+      <p class="label">Medium, YouTube, Spotify</p>
+    </div>
 
-                <div class="content-card">
-                    <div class="content-meta">
-                        <span class="content-type">Podcast</span>
-                        <span class="content-date">Spotify</span>
-                    </div>
-                    <h3 class="content-heading">Why Do We Need Bitcoin?</h3>
-                    <p class="content-excerpt">
-                        Deep dive conversation exploring the fundamental reasons Bitcoin can improve the world and how it works. 
-                        Discussion with Soham Jog covering the philosophical and practical aspects of Bitcoin's value proposition.
-                    </p>
-                    <a href="https://open.spotify.com/episode/0rIMCCUTdXA1pSEkpRF0du?trackId=2aLVXVXciUFlPOvqVgrQs2" 
-                       target="_blank" class="content-link">
-                        Listen on Spotify →
-                    </a>
-                </div>
+    <div class="feat">
+      <div>
+        <h3>The Ethereum Whitepaper, read start to finish</h3>
+        <a class="go" href="https://open.spotify.com/episode/1PzYbgy1CFaf81AHORhcEc" target="_blank" rel="noopener">Listen on Spotify &#8599;</a>
+      </div>
+      <div>
+        <p>The whole thing, out loud, start to finish. I recommend it at 1x.</p>
+      </div>
+    </div>
 
-                <div class="content-card">
-                    <div class="content-meta">
-                        <span class="content-type">Podcast</span>
-                        <span class="content-date">Spotify</span>
-                    </div>
-                    <h3 class="content-heading">Ethereum Whitepaper</h3>
-                    <p class="content-excerpt">
-                        Ethereum whitepaper read and narrated by Matt Farrow. Comprehensive analysis of Vitalik Buterin's 2014 
-                        foundational document that launched the Ethereum ecosystem.
-                    </p>
-                    <a href="https://open.spotify.com/episode/1PzYbgy1CFaf81AHORhcEc?trackId=2aLVXVXciUFlPOvqVgrQs2" 
-                       target="_blank" class="content-link">
-                        Listen on Spotify →
-                    </a>
-                </div>
-            </div>
+    <a class="read" href="https://medium.com/boilerblockchain/airdrops-the-seed-for-my-million-dollar-portfolio-79f14d2b6d06" target="_blank" rel="noopener">
+      <span class="kind">Essay</span>
+      <span class="t">Airdrops: The Seed for My Million Dollar Portfolio</span>
+      <span class="w">Boiler Blockchain</span>
+    </a>
+    <a class="read" href="https://medium.com/@matt_farrow/a-guide-to-zero-knowledge-rollups-a-blockchain-scaling-solution-9ca021af5bc5" target="_blank" rel="noopener">
+      <span class="kind">Essay</span>
+      <span class="t">A Guide to Zero-Knowledge Rollups</span>
+      <span class="w">Medium</span>
+    </a>
+    <a class="read" href="https://boilerblockchain.medium.com/industry-case-study-uniswap-b0293ec44ef2" target="_blank" rel="noopener">
+      <span class="kind">Case study</span>
+      <span class="t">Industry Case Study: Uniswap</span>
+      <span class="w">Boiler Blockchain</span>
+    </a>
+    <a class="read" href="https://www.youtube.com/watch?v=vp1SxZ0ihNw" target="_blank" rel="noopener">
+      <span class="kind">Video</span>
+      <span class="t">How to Bridge from Ethereum Mainnet to zkSync</span>
+      <span class="w">w/ Blockchain Education Network</span>
+    </a>
+    <a class="read" href="https://open.spotify.com/episode/0rIMCCUTdXA1pSEkpRF0du" target="_blank" rel="noopener">
+      <span class="kind">Podcast</span>
+      <span class="t">Why Do We Need Bitcoin?</span>
+      <span class="w">w/ Soham Jog</span>
+    </a>
+  </div>
+</section>
 
+<!-- 06 -->
+<section class="sec" id="contact">
+  <div class="mark"><span>06<b>Contact</b></span></div>
+  <div class="wrap sec-inner">
+    <div class="contact">
+      <div>
+        <h2>Building on ve(3,3), or <em>selling to people who are?</em></h2>
+        <p class="sub">I am good company for either problem. Telegram is fastest. If you send a number, I will probably go check it.</p>
+      </div>
+      <ul class="cards">
+        <li><a href="https://t.me/mattfarrow" target="_blank" rel="noopener"><span class="ch">Telegram</span><span class="vl">@mattfarrow</span></a></li>
+        <li><a href="mailto:1mattfarrow@gmail.com"><span class="ch">Email</span><span class="vl">1mattfarrow@gmail.com</span></a></li>
+        <li><a href="https://x.com/themattfarrow" target="_blank" rel="noopener"><span class="ch">X</span><span class="vl">@themattfarrow</span></a></li>
+        <li><a href="https://github.com/matthewfarrow" target="_blank" rel="noopener"><span class="ch">GitHub</span><span class="vl">matthewfarrow</span></a></li>
+        <li><a href="https://www.linkedin.com/in/matt-farrow-543943148/" target="_blank" rel="noopener"><span class="ch">LinkedIn</span><span class="vl">matt-farrow</span></a></li>
+        <li><a href="https://www.youtube.com/channel/UCIKcIjJHTc9QfsULSZ2nM0w" target="_blank" rel="noopener"><span class="ch">YouTube</span><span class="vl">Channel</span></a></li>
+        <li><a href="https://medium.com/@matt_farrow" target="_blank" rel="noopener"><span class="ch">Medium</span><span class="vl">@matt_farrow</span></a></li>
+        <li><a href="https://open.spotify.com/show/3L2fhqj9PuiwztZdamjg0W" target="_blank" rel="noopener"><span class="ch">Spotify</span><span class="vl">Show</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-        </section>
+</main>
 
-        <!-- Connect Section -->
-        <section id="contact" class="content-section dark-section">
-            <h2 class="section-title" style="margin-bottom: 1.5rem;">Get In Touch</h2>
-            
-            <div class="contact-info">
-                <div class="contact-item">
-                    <a href="mailto:1mattfarrow@gmail.com" class="contact-link">
-                        1mattfarrow@gmail.com
-                    </a>
-                </div>
-                <div class="contact-item">
-                    <a href="https://t.me/mattfarrow" target="_blank" class="contact-link">
-                        @mattfarrow
-                    </a>
-                </div>
-            </div>
+<footer class="foot">
+  <div class="wrap">
+    <p>Matt Farrow. Austin, Texas.</p>
+    <p>Written by hand as one HTML file. No framework, no build step, no tracker. Set in Newsreader and IBM Plex Mono.</p>
+    <p>The three red notes on this page are corrections to my own numbers. The Series 7 is CRD# 6627, and it is public.</p>
+  </div>
+</footer>
 
-            <h3 class="section-title" style="font-size: 2rem; margin-top: 4rem; margin-bottom: 2rem;">Follow</h3>
-            <div class="pillar-grid">
-                <a href="https://www.youtube.com/channel/UCIKcIjJHTc9QfsULSZ2nM0w?sub_confirmation=1" 
-                   target="_blank" class="pillar-link">
-                    <div class="pillar">
-                        <div class="pillar-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                            </svg>
-                        </div>
-                        <span class="pillar-text">YouTube</span>
-                    </div>
-                </a>
+<script>
+(function(){
+  var groups = [].slice.call(document.querySelectorAll('[data-draw]'));
+  function show(g){ g.classList.add('drawn'); }
+  if(!('IntersectionObserver' in window)){ groups.forEach(show); return; }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){ show(e.target); io.unobserve(e.target); }
+    });
+  }, { threshold:.25 });
+  groups.forEach(function(g){ io.observe(g); });
+  /* failsafe: never leave a bar lying at zero if the observer never delivers */
+  setTimeout(function(){ groups.forEach(show); }, 4000);
+})();
 
-                <a href="https://x.com/themattfarrow" target="_blank" class="pillar-link">
-                    <div class="pillar">
-                        <div class="pillar-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                            </svg>
-                        </div>
-                        <span class="pillar-text">X (Twitter)</span>
-                    </div>
-                </a>
+(function(){
+  var order = ['tropic','shipped','before','origin','writing','contact'];
+  var links = {};
+  [].forEach.call(document.querySelectorAll('.nav-links a[data-nav]'), function(a){
+    links[a.getAttribute('href').slice(1)] = a;
+  });
+  if(!('IntersectionObserver' in window)) return;
+  var seen = [];
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      var id = e.target.id, i = seen.indexOf(id);
+      if(e.isIntersecting && i === -1) seen.push(id);
+      if(!e.isIntersecting && i !== -1) seen.splice(i,1);
+    });
+    var here = order.filter(function(id){ return seen.indexOf(id) !== -1; })[0];
+    Object.keys(links).forEach(function(id){
+      links[id].classList.toggle('on', id === here);
+    });
+  }, { rootMargin:'-30% 0px -55% 0px', threshold:0 });
+  order.forEach(function(id){
+    var el = document.getElementById(id); if(el) io.observe(el);
+  });
+})();
+</script>
 
-                <a href="https://www.linkedin.com/in/matt-farrow-543943148/" target="_blank" class="pillar-link">
-                    <div class="pillar">
-                        <div class="pillar-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </div>
-                        <span class="pillar-text">LinkedIn</span>
-                    </div>
-                </a>
-
-                <a href="https://github.com/matthewfarrow" target="_blank" class="pillar-link">
-                    <div class="pillar">
-                        <div class="pillar-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </div>
-                        <span class="pillar-text">GitHub</span>
-                    </div>
-                </a>
-
-                <a href="https://medium.com/@matt_farrow" target="_blank" class="pillar-link">
-                    <div class="pillar">
-                        <div class="pillar-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
-                            </svg>
-                        </div>
-                        <span class="pillar-text">Medium</span>
-                    </div>
-                </a>
-
-                <a href="https://open.spotify.com/show/3L2fhqj9PuiwztZdamjg0W?trackId=2W7dGWMbxPtXrNimzkrCjZ" 
-                   target="_blank" class="pillar-link">
-                    <div class="pillar">
-                        <div class="pillar-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
-                            </svg>
-                        </div>
-                        <span class="pillar-text">Podcast</span>
-                    </div>
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="main-footer">
-        <div class="footer-arch"></div>
-        <p class="footer-text">
-            Matt Farrow • Austin, TX • © 2026
-        </p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
