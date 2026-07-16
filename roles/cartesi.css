@@ -9,19 +9,32 @@ body{
 }
 .wrap{ max-width:1240px; margin:0 auto; padding:0 32px; }
 
-.nav{ height:64px; }
+/* their nav is a white pill floating on the cyan, not a bar across it */
+.navbar{ padding:14px 0 0; }
+.nav{
+  background:#fff; border-radius:9999px; height:52px;
+  padding:0 10px 0 24px; gap:22px;
+  box-shadow:0 1px 2px rgba(27,26,30,.06);
+}
 .nav-co{
   font-family:"Plus Jakarta Sans", sans-serif; color:#1B1A1E;
-  font-size:22px; font-weight:500; letter-spacing:-.01em;
+  font-size:20px; font-weight:500; letter-spacing:-.01em;
 }
+.nav-links{ margin:0 auto; gap:26px; }
 .nav-links a{ color:#1B1A1E; font-size:13.5px; font-weight:500; }
 .nav-links a:hover{ opacity:.6; }
+.nav-r{ margin-left:0; }
 .nav-r .pill{
-  background:#1B1A1E; color:#F9FAFB; border-radius:4px; padding:10px 20px;
-  font-size:12px; font-weight:500; letter-spacing:.35px; text-transform:uppercase;
+  background:#1B1A1E; color:#F9FAFB; border-radius:9999px; padding:9px 18px;
+  font-size:11.5px; font-weight:500; letter-spacing:.35px; text-transform:uppercase;
+}
+@media (max-width:900px){
+  .nav{ padding:0 10px 0 18px; }
+  .nav-links{ margin:0; }
 }
 
-.hero{ padding:88px 0 96px; text-align:center; }
+.hero{ padding:72px 0 80px; text-align:center; }
+.scene{ width:100%; height:auto; display:block; margin-bottom:-1px; }
 .eyebrow{ color:#1B1A1E; opacity:.55; margin-bottom:18px; }
 h1{
   font-family:"Plus Jakarta Sans", sans-serif; color:#1B1A1E;

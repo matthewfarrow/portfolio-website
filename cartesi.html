@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&family=Oswald:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="icon" type="image/svg+xml" href="favicon.svg?v=5">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=6">
 <link rel="stylesheet" href="roles/base.css">
 <link rel="stylesheet" href="roles/cartesi.css">
 </head>
@@ -22,16 +22,18 @@
   <span class="who">Styled after cartesi.io. My page, not theirs.</span>
 </div>
 
-<div class="wrap">
-  <nav class="nav">
-    <span class="nav-co">cartesi</span>
-    <div class="nav-links">
-      <a href="/">Resume</a><a href="#numbers">Numbers</a><a href="/purdue.html">Purdue</a>
-    </div>
-    <div class="nav-r">
-      <a class="pill" href="https://t.me/mattfarrow" target="_blank" rel="noopener">Get in touch</a>
-    </div>
-  </nav>
+<div class="navbar">
+  <div class="wrap">
+    <nav class="nav">
+      <span class="nav-co">cartesi</span>
+      <div class="nav-links">
+        <a href="/">Resume</a><a href="#numbers">Numbers</a><a href="/purdue.html">Purdue</a><a href="/hydrex.html">Hydrex</a>
+      </div>
+      <div class="nav-r">
+        <a class="pill" href="https://t.me/mattfarrow" target="_blank" rel="noopener">Get in touch</a>
+      </div>
+    </nav>
+  </div>
 </div>
 
 <header class="hero">
@@ -43,6 +45,24 @@
     <a class="btn" href="/">Full resume</a>
   </div>
 </header>
+
+<!-- A wide scene band sits under their hero. Theirs is commissioned illustration
+     and cannot be matched, so this is a smooth abstract horizon in the same
+     palette: it holds the same place in the composition without pretending to
+     be their artwork. -->
+<svg class="scene" viewBox="0 0 1440 200" preserveAspectRatio="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F2A65A"/><stop offset="52%" stop-color="#E8804A"/><stop offset="100%" stop-color="#D96F5E"/>
+    </linearGradient>
+    <linearGradient id="mid" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#12626A"/><stop offset="100%" stop-color="#0D4A57"/>
+    </linearGradient>
+  </defs>
+  <path d="M0,200 L0,124 C180,86 300,150 470,132 C640,114 760,52 940,74 C1110,95 1240,148 1440,110 L1440,200 Z" fill="url(#sky)" opacity=".9"/>
+  <path d="M0,200 L0,158 C200,132 340,176 520,162 C700,148 830,104 1010,124 C1180,143 1270,178 1440,152 L1440,200 Z" fill="url(#mid)" opacity=".95"/>
+  <path d="M0,200 L0,182 C220,166 380,192 580,182 C780,172 900,152 1090,166 C1250,178 1320,190 1440,178 L1440,200 Z" fill="#1B1A1E"/>
+</svg>
 
 <section class="numbers" id="numbers">
   <div class="wrap">
