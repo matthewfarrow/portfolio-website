@@ -6,7 +6,7 @@
   /* ink ramp */
   --ink-1:       #E9EBED;
   --ink-2:       #A9AEB4;
-  --ink-3:       #757C84;
+  --ink-3:       #777E86;   /* 4.60:1 on --ground. #757C84 measured 4.48 and carries every label. */
   --ink-4:       #4A515A;
 
   /* rules */

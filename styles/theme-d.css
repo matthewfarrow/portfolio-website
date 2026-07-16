@@ -1,0 +1,52 @@
+/* D. Swiss modernist.
+   Warm grey ground, black ink, one red. Big tight type, hard grid, rules
+   doing structural work. The most "designed" of the four, and the one that
+   looks least like software. */
+
+:root{
+  --ground:      #EDEDEA;
+  --ground-2:    #E2E2DE;
+
+  --ink-1:       #000000;
+  --ink-2:       #2B2B2B;
+  --ink-3:       #575757;
+  --ink-4:       #8C8C8C;
+
+  --rule:        #CECEC9;
+  --rule-hard:   #9C9C96;
+
+  --accent-core: #E5231B;   /* swiss red */
+  --accent:      #C41A13;   /* darkened for AA on the grey (6.1:1) */
+  --accent-wash: #F5D3D1;
+}
+
+body{ -webkit-font-smoothing:auto; }
+
+/* Swiss: the name is a slab, not a flourish */
+h1{
+  font-size:clamp(40px, 7.2vw, 88px);
+  letter-spacing:-.045em;
+  font-weight:600;
+  text-transform:uppercase;
+}
+.head{ border-bottom-width:2px; border-bottom-color:var(--ink-1); }
+.sec-head{ border-bottom-width:2px; border-bottom-color:var(--ink-1); }
+.sec-head h2{ letter-spacing:.2em; }
+.co{ font-size:21px; letter-spacing:-.025em; }
+.foot{ border-top-width:2px; border-top-color:var(--ink-1); }
+
+.brief{ border-color:var(--ink-1); border-width:2px; }
+.bc{ border-right-color:var(--rule-hard); }
+.job.now{ border-left-width:4px; }
+.g-track{ background:#FFFFFF; }
+.chip{ border-color:var(--ink-4); }
+::selection{ background:var(--accent-core); color:#fff; }
+
+.pickbar{
+  position:fixed; left:16px; bottom:16px; z-index:99;
+  font-family:var(--mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--ground); background:var(--ink-1);
+  border:1px solid var(--ink-1); padding:8px 12px; text-decoration:none;
+}
+.pickbar:hover{ background:var(--accent-core); border-color:var(--accent-core); color:#fff; }
+@media print{ .pickbar{ display:none; } }
