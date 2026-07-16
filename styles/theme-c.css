@@ -22,8 +22,8 @@
 
 /* the whole page speaks in one voice */
 body, h1, .co, .big, .pn, .title, .en, .cn, .hon,
-.lede, .sub, .num-cap, .co-desc, .role li, .pd, .e2, .e3, .cs,
-.rec, .g-legend p, .decl p, .skills, .cta p, .pub a, .note{
+.lede, .sub, .num-cap, .role li, .pd, .e2, .cs,
+.rec, .g-legend p, .skills, .cta p, .pub a{
   font-family:var(--mono);
 }
 
@@ -32,11 +32,10 @@ h1{ font-size:clamp(30px, 4.6vw, 54px); letter-spacing:-.02em; font-weight:600; 
 .big{ font-size:16px; letter-spacing:-.01em; }
 .num{ font-size:27px; }
 .pn{ font-size:15px; }
-.sec-head .note{ font-style:normal; font-size:10.5px; letter-spacing:.03em; }
 
 /* mono runs wide, so give the line a little more room to breathe */
 body{ line-height:1.5; }
-.role li, .pd, .co-desc{ font-size:12px; }
+.role li, .pd{ font-size:12px; }
 .rec{ font-size:11px; }
 
 .pickbar{
