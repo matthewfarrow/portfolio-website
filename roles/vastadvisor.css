@@ -44,7 +44,7 @@ h1 em{ font-style:normal; color:#F5C24C; }
 
 .card{ background:#16223C; border:1px solid #22304F; border-radius:10px; padding:22px; }
 .card-h{
-  font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:#7C88A0;
+  font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:#98A6BE;
   padding-bottom:12px; border-bottom:1px solid #22304F; margin-bottom:4px;
 }
 .statrow{ grid-template-columns:1fr; gap:0; }

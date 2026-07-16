@@ -26,7 +26,7 @@ body{
 h1{ color:#fff; font-size:clamp(34px,3.9vw,50px); font-weight:500; line-height:1.08; margin-bottom:20px; }
 .sub{ color:#B9BEC4; font-size:17px; max-width:44ch; margin-bottom:14px; }
 .sub u{ text-decoration:none; border-bottom:2px solid #4AA3F0; color:#fff; }
-.meta{ color:#6E757C; font-size:13px; margin-bottom:30px; }
+.meta{ color:#70777E; font-size:13px; margin-bottom:30px; }
 .btn.primary{
   background:linear-gradient(90deg,#1A5FD0 0%,#4AA3F0 100%);
   color:#fff; border-radius:9999px; padding:14px 30px;
@@ -45,7 +45,7 @@ h1{ color:#fff; font-size:clamp(34px,3.9vw,50px); font-weight:500; line-height:1
   pointer-events:none;
 }
 .card-h{
-  font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:#6E757C;
+  font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:#767D84;
   padding-bottom:14px; border-bottom:1px solid #1C2026; margin-bottom:6px;
 }
 .statrow{ grid-template-columns:1fr; gap:0; }
@@ -58,5 +58,5 @@ h1{ color:#fff; font-size:clamp(34px,3.9vw,50px); font-weight:500; line-height:1
 }
 .stat span{ color:#8B9199; font-size:13.5px; line-height:1.4; }
 
-.fine{ color:#5A6068; padding:0 0 56px; }
+.fine{ color:#71777F; padding:0 0 56px; }
 .fine a{ color:#8B9199; }

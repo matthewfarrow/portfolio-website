@@ -17,8 +17,8 @@ img,svg{ display:block; max-width:100%; }
 }
 .mfbar a{ color:#E9EBED; text-decoration:none; }
 .mfbar a:hover{ color:#5B8CFF; }
-.mfbar .sep{ opacity:.35; }
-.mfbar .who{ margin-left:auto; opacity:.65; }
+.mfbar .sep{ color:#7A7E83; }
+.mfbar .who{ margin-left:auto; color:#797E84; }
 @media (max-width:720px){ .mfbar .who{ display:none; } }
 
 /* company nav */
