@@ -1,40 +1,49 @@
-/* Cartesi: #00F6FF cyan ground, near-black ink, small-radius black uppercase
-   buttons, Plus Jakarta Sans headings. Their heading face is on Google Fonts,
-   so this one matches exactly. */
+/* Cartesi: full cyan ground, centered hero, one black small-radius uppercase
+   button. Their heading face, Plus Jakarta Sans, is on Google Fonts, so this
+   one matches exactly. */
 
 body{
   background:#00F6FF; color:#1B1A1E;
   font-family:"Inter", sans-serif;
   -webkit-font-smoothing:antialiased;
 }
-h1,h2,h3,.stat b,.rolerow .rn{
-  font-family:"Plus Jakarta Sans", sans-serif; font-weight:500; color:#1B1A1E;
+.wrap{ max-width:1240px; margin:0 auto; padding:0 32px; }
+
+.nav{ height:64px; }
+.nav-co{
+  font-family:"Plus Jakarta Sans", sans-serif; color:#1B1A1E;
+  font-size:22px; font-weight:500; letter-spacing:-.01em;
 }
-.hero{ text-align:center; }
-.hero h1{ letter-spacing:-.02em; }
-.hero .sub{ margin-left:auto; margin-right:auto; color:#1B1A1E; opacity:.78; }
-.hero .dates{ color:#1B1A1E; opacity:.6; }
-.eyebrow{ color:#1B1A1E; opacity:.6; }
-.hero .cta{ margin-left:auto; margin-right:auto; }
-
-.stats{ background:#1B1A1E; border:1px solid #1B1A1E; border-radius:4px; overflow:hidden; }
-.stat{ background:#00F6FF; padding:22px 20px; text-align:center; }
-.stat b{ color:#1B1A1E; letter-spacing:-.02em; }
-.stat span{ color:#1B1A1E; opacity:.65; }
-
-.body{ background:#F9FAFB; margin-top:8px; padding-top:64px; }
-.body h2, .body h3{ color:#1B1A1E; }
-.body p, .body li{ color:#3D3C42; }
-.body li::before{ background:#1B1A1E; border-radius:50%; }
-.rolerow{ border-bottom:1px solid #E4E5E7; }
-.rolerow:last-child{ border-bottom:0; }
-.rolerow .rd{ color:#6B6A70; }
-
-.cta{
-  background:#1B1A1E; color:#F9FAFB; border-radius:4px;
-  padding:12px 24px; text-transform:uppercase; letter-spacing:.35px; font-weight:500;
+.nav-links a{ color:#1B1A1E; font-size:13.5px; font-weight:500; }
+.nav-links a:hover{ opacity:.6; }
+.nav-r .pill{
+  background:#1B1A1E; color:#F9FAFB; border-radius:4px; padding:10px 20px;
+  font-size:12px; font-weight:500; letter-spacing:.35px; text-transform:uppercase;
 }
-.cta:hover{ background:#000; }
 
-.foot{ background:#F9FAFB; border-top:1px solid #E4E5E7; color:#6B6A70; }
-.foot a{ color:#1B1A1E; }
+.hero{ padding:88px 0 96px; text-align:center; }
+.eyebrow{ color:#1B1A1E; opacity:.55; margin-bottom:18px; }
+h1{
+  font-family:"Plus Jakarta Sans", sans-serif; color:#1B1A1E;
+  font-size:clamp(32px,4.6vw,58px); font-weight:500; line-height:1.1;
+  letter-spacing:-.02em; margin:0 auto 20px; max-width:16ch;
+}
+.sub{ color:#1B1A1E; opacity:.75; font-size:17px; max-width:50ch; margin:0 auto 12px; }
+.meta{ color:#1B1A1E; opacity:.55; font-size:13px; margin-bottom:30px; }
+.btn{
+  background:#1B1A1E; color:#F9FAFB; border-radius:4px; padding:13px 26px;
+  font-size:12px; font-weight:500; letter-spacing:.35px; text-transform:uppercase;
+}
+.btn:hover{ background:#000; }
+
+.numbers{ background:#F9FAFB; padding:56px 0; }
+.statrow{ grid-template-columns:repeat(3,1fr); }
+.stat{ border-top:2px solid #1B1A1E; padding:18px 0 0; }
+.stat b{
+  font-family:"Plus Jakarta Sans", sans-serif; color:#1B1A1E;
+  font-size:32px; font-weight:500; letter-spacing:-.02em; margin-bottom:8px;
+}
+.stat span{ color:#6B6A70; font-size:13px; line-height:1.45; }
+
+.fine{ background:#F9FAFB; color:#6B6A70; padding:0 0 56px; }
+.fine a{ color:#1B1A1E; }

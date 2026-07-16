@@ -1,0 +1,79 @@
+/* Purdue: black ground, Boilermaker gold #CFB991, a photo mosaic strip across
+   the top, then heavy condensed uppercase over gold quick-link buttons.
+   Their United Sans is licensed, so this uses Oswald, the closest free
+   condensed grotesk. No campus photography is used: the mosaic is drawn. */
+
+body{
+  background:#000; color:#C9C9C9;
+  font-family:"Inter", -apple-system, system-ui, Arial, sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{ max-width:1240px; margin:0 auto; padding:0 32px; }
+
+.nav{ height:58px; }
+.nav-co{
+  font-family:"Oswald", Arial, sans-serif; color:#fff;
+  font-size:17px; font-weight:600; letter-spacing:.06em; text-transform:uppercase;
+}
+.nav-co span{ color:#CFB991; }
+.nav-links a{ color:#D8D8D8; font-size:13px; }
+.nav-links a:hover{ color:#CFB991; }
+.nav-r a{ color:#D8D8D8; font-size:13px; }
+.nav-r .pill{
+  background:#CFB991; color:#000; padding:8px 16px; font-weight:700; font-size:12px;
+  text-transform:uppercase; letter-spacing:.06em;
+}
+
+/* their photo mosaic, drawn from the gold ramp instead of using their photos */
+.mosaic{ display:grid; grid-template-columns:repeat(8,1fr); gap:2px; }
+.mosaic i{ display:block; height:56px; }
+@media (max-width:860px){ .mosaic{ grid-template-columns:repeat(4,1fr); } }
+
+.hero{ padding:56px 0 44px; }
+.eyebrow{ color:#CFB991; margin-bottom:20px; }
+h1{
+  font-family:"Oswald", Arial, sans-serif;
+  color:#fff; font-size:clamp(30px,4.4vw,56px); font-weight:600;
+  line-height:1.06; letter-spacing:.005em; text-transform:uppercase; margin-bottom:20px;
+  max-width:20ch;
+}
+.sub{ color:#C9C9C9; font-size:16px; max-width:52ch; margin-bottom:12px; }
+.meta{ color:#8A8A8A; font-size:13px; margin-bottom:30px; }
+
+/* their gold quick links */
+.quick{ display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+.quick-l{
+  font-family:"Oswald", Arial, sans-serif; color:#8A8A8A;
+  font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+}
+.btn.gold{
+  background:#CFB991; color:#000; padding:11px 18px; font-size:12px; font-weight:700;
+  letter-spacing:.06em; text-transform:uppercase;
+  font-family:"Oswald", Arial, sans-serif;
+}
+.btn.gold:hover{ background:#E3D2AE; }
+
+/* their search bar */
+.search{ background:#0C0C0C; border-top:1px solid #1E1E1E; padding:34px 0 40px; }
+.search h2{
+  font-family:"Oswald", Arial, sans-serif; color:#fff; text-align:center;
+  font-size:16px; font-weight:500; letter-spacing:.04em; text-transform:uppercase; margin-bottom:16px;
+}
+.search-in{
+  max-width:620px; margin:0 auto; background:#fff; border-radius:4px;
+  display:flex; align-items:center; gap:10px; padding:12px 16px;
+  color:#6A6A6A; font-size:14px;
+}
+.search-in svg{ width:15px; height:15px; stroke:#6A6A6A; flex:none; }
+
+.numbers{ padding:44px 0 0; }
+.statrow{ grid-template-columns:repeat(4,1fr); }
+.stat{ background:#0C0C0C; border:1px solid #1E1E1E; padding:20px 18px; }
+.stat b{
+  font-family:"Oswald", Arial, sans-serif; color:#CFB991;
+  font-size:30px; font-weight:600; letter-spacing:.01em; margin-bottom:8px;
+}
+.stat span{ color:#9A9A9A; font-size:12.5px; line-height:1.45; }
+
+.fine{ color:#7A7A7A; padding:34px 0 56px; }
+.fine a{ color:#CFB991; }

@@ -1,4 +1,5 @@
-/* VastAdvisor: deep navy hero with a faint grid, gold accent, plain grotesk.
+/* VastAdvisor: navy on a faint grid, two-column hero with a dashboard card on
+   the right, gold accent dots down the right edge, then a stat strip.
    Their site runs on Wix and ships Helvetica-ish system faces, so Inter is a
    close and honest stand-in. */
 
@@ -6,33 +7,56 @@ body{
   background:#0F1B33; color:#B4BED2;
   font-family:"Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing:antialiased;
-}
-h1,h2,h3,.stat b,.rolerow .rn{ color:#FFFFFF; font-weight:600; letter-spacing:-.02em; }
-.eyebrow{ color:#F5C24C; }
-
-/* the grid the hero is built on */
-.hero{
   position:relative;
-  background:
-    linear-gradient(180deg,#16244080 0%,#0F1B3300 100%),
-    repeating-linear-gradient(0deg, rgba(255,255,255,.045) 0 1px, transparent 1px 96px),
-    repeating-linear-gradient(90deg, rgba(255,255,255,.045) 0 1px, transparent 1px 96px);
 }
-.hero .sub{ color:#B4BED2; }
-.hero .dates{ color:#7C88A0; }
+.wrap{ max-width:1240px; margin:0 auto; padding:0 32px; }
 
-.stats{ background:#1D2A47; border:1px solid #1D2A47; border-radius:10px; overflow:hidden; }
-.stat{ background:#16223C; padding:22px 20px; }
-.stat b{ color:#F5C24C; letter-spacing:-.03em; }
-.stat span{ color:#7C88A0; }
+.nav{ height:64px; }
+.nav-co{ color:#fff; font-size:17px; font-weight:700; }
+.nav-links a{ color:#B4BED2; font-size:13.5px; }
+.nav-links a:hover{ color:#fff; }
+.nav-r a{ color:#B4BED2; font-size:13.5px; }
+.nav-r .pill{ background:#F5C24C; color:#0F1B33; border-radius:6px; padding:9px 18px; font-weight:600; font-size:13px; }
+.nav-r .pill:hover{ background:#FFD478; }
 
-.body li::before{ background:#F5C24C; }
-.rolerow{ border-bottom:1px solid #1D2A47; }
-.rolerow:last-child{ border-bottom:0; }
-.rolerow .rd{ color:#7C88A0; }
+/* their festival strip */
+.strip{
+  background:#16223C; border-top:1px solid #22304F; border-bottom:1px solid #22304F;
+  padding:9px 0; font-size:11.5px; letter-spacing:.14em; text-transform:uppercase;
+  color:#F5C24C; text-align:center; font-weight:600;
+}
 
-.cta{ background:#F5C24C; color:#0F1B33; border-radius:6px; padding:12px 26px; }
-.cta:hover{ background:#FFD478; }
+.hero{
+  padding:56px 0 72px;
+  background:
+    repeating-linear-gradient(0deg, rgba(255,255,255,.04) 0 1px, transparent 1px 88px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.04) 0 1px, transparent 1px 88px);
+}
+.split{ display:grid; grid-template-columns:1.05fr 1fr; gap:48px; align-items:center; }
+.eyebrow{ color:#F5C24C; margin-bottom:16px; }
+h1{ color:#fff; font-size:clamp(30px,3.5vw,44px); font-weight:600; line-height:1.14; margin-bottom:18px; }
+h1 em{ font-style:normal; color:#F5C24C; }
+.sub{ color:#B4BED2; font-size:16px; max-width:44ch; margin-bottom:14px; }
+.meta{ color:#7C88A0; font-size:13px; margin-bottom:28px; }
+.btn.primary{ background:#F5C24C; color:#0F1B33; border-radius:6px; padding:13px 26px; }
+.btn.primary:hover{ background:#FFD478; }
+.btn.ghost{ border:1px solid #3A4A6B; color:#fff; border-radius:6px; padding:13px 26px; }
 
-.foot{ border-top:1px solid #1D2A47; color:#7C88A0; }
-.foot a{ color:#F5C24C; }
+.card{ background:#16223C; border:1px solid #22304F; border-radius:10px; padding:22px; }
+.card-h{
+  font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:#7C88A0;
+  padding-bottom:12px; border-bottom:1px solid #22304F; margin-bottom:4px;
+}
+.statrow{ grid-template-columns:1fr; gap:0; }
+.stat{ padding:14px 0; border-bottom:1px solid #22304F; display:flex; align-items:baseline; gap:14px; }
+.stat:last-child{ border-bottom:0; }
+.stat b{ color:#F5C24C; font-size:27px; font-weight:600; letter-spacing:-.03em; min-width:112px; }
+.stat span{ color:#8B97AE; font-size:13px; line-height:1.4; }
+
+/* the gold dots down their right edge */
+.dots{ position:absolute; right:14px; top:180px; display:flex; flex-direction:column; gap:26px; }
+.dots i{ width:9px; height:9px; border-radius:50%; background:#F5C24C; opacity:.75; }
+@media (max-width:1100px){ .dots{ display:none; } }
+
+.fine{ color:#7C88A0; padding:24px 0 56px; }
+.fine a{ color:#F5C24C; }

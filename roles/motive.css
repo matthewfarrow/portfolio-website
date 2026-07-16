@@ -1,38 +1,62 @@
-/* Motive: black ground, white type, blue gradient pill CTAs, tight sans.
+/* Motive: black ground, two-column hero, text left and a product card right,
+   blue gradient pill primary + outlined pill secondary.
    MaisonNeue is licensed, so this uses Inter.
-   The gradient is deliberate here: it is Motive's actual primary button, not
-   decoration borrowed from a template. */
+   The gradient stays: it is Motive's actual primary button, not decoration. */
 
 body{
-  background:#000000; color:#B9BEC4;
+  background:#000; color:#B9BEC4;
   font-family:"Inter", -apple-system, system-ui, Roboto, Arial, sans-serif;
   -webkit-font-smoothing:antialiased;
 }
-h1,h2,h3,.stat b,.rolerow .rn{ color:#FFFFFF; font-weight:500; letter-spacing:-.025em; }
-.hero h1{ letter-spacing:-.035em; font-weight:500; }
-.eyebrow{ color:#4AA3F0; }
-.hero .sub{ color:#B9BEC4; }
-.hero .dates{ color:#6E757C; }
+.wrap{ max-width:1240px; margin:0 auto; padding:0 32px; }
 
-.stats{ background:#1A1A1A; border:1px solid #1A1A1A; border-radius:12px; overflow:hidden; }
-.stat{ background:#0A0A0A; padding:22px 20px; }
+.nav{ height:68px; }
+.nav-co{ color:#fff; font-size:21px; font-style:italic; }
+.nav-links a{ color:#D5D9DE; }
+.nav-links a:hover{ color:#fff; }
+.nav-r a{ color:#D5D9DE; }
+.nav-r .pill{
+  background:linear-gradient(90deg,#1A5FD0 0%,#4AA3F0 100%);
+  color:#fff; border-radius:9999px; padding:9px 18px; font-weight:600; font-size:13px;
+}
+
+.hero{ padding:64px 0 88px; }
+.split{ display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; }
+.eyebrow{ color:#4AA3F0; margin-bottom:18px; }
+h1{ color:#fff; font-size:clamp(34px,3.9vw,50px); font-weight:500; line-height:1.08; margin-bottom:20px; }
+.sub{ color:#B9BEC4; font-size:17px; max-width:44ch; margin-bottom:14px; }
+.sub u{ text-decoration:none; border-bottom:2px solid #4AA3F0; color:#fff; }
+.meta{ color:#6E757C; font-size:13px; margin-bottom:30px; }
+.btn.primary{
+  background:linear-gradient(90deg,#1A5FD0 0%,#4AA3F0 100%);
+  color:#fff; border-radius:9999px; padding:14px 30px;
+}
+.btn.ghost{ border:1px solid #4A4F55; color:#fff; border-radius:9999px; padding:14px 30px; }
+.btn.ghost:hover{ border-color:#fff; }
+
+/* the slot their product screenshot sits in, holding his numbers instead */
+.card{
+  background:#0B0E12; border:1px solid #1C2026; border-radius:14px; padding:26px;
+  position:relative; overflow:hidden;
+}
+.card::before{
+  content:""; position:absolute; inset:0;
+  background:radial-gradient(120% 90% at 80% 0%, rgba(74,163,240,.14) 0%, rgba(74,163,240,0) 60%);
+  pointer-events:none;
+}
+.card-h{
+  font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:#6E757C;
+  padding-bottom:14px; border-bottom:1px solid #1C2026; margin-bottom:6px;
+}
+.statrow{ grid-template-columns:1fr; gap:0; }
+.stat{ padding:16px 0; border-bottom:1px solid #1C2026; display:flex; align-items:baseline; gap:14px; }
+.stat:last-child{ border-bottom:0; }
 .stat b{
+  font-size:30px; font-weight:600; letter-spacing:-.03em; min-width:132px;
   background:linear-gradient(90deg,#1A5FD0 0%,#4AA3F0 100%);
   -webkit-background-clip:text; background-clip:text; color:transparent;
-  letter-spacing:-.03em;
 }
-.stat span{ color:#6E757C; }
+.stat span{ color:#8B9199; font-size:13.5px; line-height:1.4; }
 
-.body li::before{ background:#4AA3F0; border-radius:50%; }
-.rolerow{ border-bottom:1px solid #1A1A1A; }
-.rolerow:last-child{ border-bottom:0; }
-.rolerow .rd{ color:#6E757C; }
-
-.cta{
-  background:linear-gradient(90deg,#1A5FD0 0%,#4AA3F0 100%);
-  color:#fff; border-radius:9999px; padding:13px 30px;
-}
-.cta.ghost{ background:none; border:1px solid #FFFFFF; color:#fff; }
-
-.foot{ border-top:1px solid #1A1A1A; color:#6E757C; }
-.foot a{ color:#4AA3F0; }
+.fine{ color:#5A6068; padding:0 0 56px; }
+.fine a{ color:#8B9199; }

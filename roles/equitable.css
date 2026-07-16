@@ -1,31 +1,66 @@
-/* Equitable Advisors: navy #002677 hero, white body, mint #00D9A7 accent,
-   big confident sans. GT-America is licensed, so this uses Inter. */
+/* Equitable: a thin top bar with a mint Sign in, their three-audience selector
+   row, then the big navy gradient hero with the headline low-left, and their
+   navy-on-white statement line under it. GT-America is licensed, so Inter. */
 
 body{
-  background:#FFFFFF; color:#4A4A4A;
+  background:#fff; color:#4A4A4A;
   font-family:"Inter", Roboto, Arial, sans-serif;
   -webkit-font-smoothing:antialiased;
 }
-h1,h2,h3,.rolerow .rn{ color:#002677; font-weight:600; letter-spacing:-.02em; }
+.wrap{ max-width:1240px; margin:0 auto; padding:0 32px; }
 
-.hero{ background:linear-gradient(115deg,#001B54 0%,#002677 45%,#2447C4 100%); }
-.hero h1{ color:#FFFFFF; letter-spacing:-.03em; }
-.hero .sub{ color:#C8D2EE; }
-.hero .dates{ color:#93A3D4; }
-.eyebrow{ color:#00D9A7; }
+.nav{ height:56px; }
+.nav-co{ color:#002677; font-size:14px; font-weight:600; }
+.nav-links a{ color:#002677; font-size:13.5px; }
+.nav-links a:hover{ text-decoration:underline; }
+.nav-r a{ color:#002677; font-size:13.5px; }
+.nav-r .pill{ background:#00D9A7; color:#002677; border-radius:9999px; padding:8px 20px; font-weight:600; font-size:13px; }
+.nav-r .pill:hover{ background:#00C296; }
 
-.stats{ background:#E6E9F2; border:1px solid #E6E9F2; }
-.stat{ background:#FFFFFF; padding:22px 20px; }
-.stat b{ color:#002677; letter-spacing:-.03em; }
-.stat span{ color:#6E6E6E; }
+/* their audience selector row */
+.pick{ border-top:1px solid #E6E9F2; border-bottom:1px solid #E6E9F2; padding:18px 0; }
+.pick-in{ display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+.pick-i{ display:flex; gap:12px; align-items:flex-start; }
+.pick-i .r{
+  width:17px; height:17px; border-radius:50%; border:1.5px solid #9AA6C4; flex:none; margin-top:2px;
+}
+.pick-i.on .r{ border-color:#002677; border-width:5px; }
+.pick-i b{ display:block; color:#002677; font-size:14.5px; font-weight:600; margin-bottom:2px; }
+.pick-i span{ display:block; color:#6E6E6E; font-size:12.5px; line-height:1.45; }
+@media (max-width:860px){ .pick-in{ grid-template-columns:1fr; gap:16px; } }
 
-.body li::before{ background:#00D9A7; }
-.rolerow{ border-bottom:1px solid #E6E9F2; }
-.rolerow:last-child{ border-bottom:0; }
-.rolerow .rd{ color:#6E6E6E; }
+.notice{ background:#E8F1FD; padding:12px 0; text-align:center; color:#002677; font-size:14px; }
+.notice b{ font-weight:600; }
+.notice a{ color:#002677; }
 
-.cta{ background:#002677; color:#fff; border-radius:2px; padding:13px 28px; }
-.cta:hover{ background:#001B54; }
+/* the hero: navy gradient, headline sitting low and left */
+.hero{
+  background:linear-gradient(115deg,#001B54 0%,#002677 42%,#2447C4 100%);
+  min-height:400px; display:flex; align-items:flex-end; padding:64px 0 56px;
+  position:relative; overflow:hidden;
+}
+/* a faint watermark stands in for their brand illustration, which is theirs */
+.hero::after{
+  content:""; position:absolute; right:-40px; top:-60px; width:520px; height:520px;
+  border:60px solid rgba(255,255,255,.05); border-radius:50%;
+}
+.hero .wrap{ position:relative; z-index:1; }
+.eyebrow{ color:#00D9A7; margin-bottom:14px; }
+h1{ color:#fff; font-size:clamp(32px,4.2vw,52px); font-weight:600; line-height:1.1; margin-bottom:16px; }
+.sub{ color:#C8D2EE; font-size:16.5px; max-width:46ch; margin-bottom:12px; }
+.meta{ color:#93A3D4; font-size:13px; }
 
-.foot{ border-top:1px solid #E6E9F2; color:#6E6E6E; }
-.foot a{ color:#002677; }
+.statement{ padding:44px 0 36px; }
+.statement p{
+  color:#002677; font-size:clamp(20px,2.4vw,30px); font-weight:600;
+  line-height:1.3; letter-spacing:-.02em; text-align:center; max-width:26ch; margin:0 auto;
+}
+
+.numbers{ padding:0 0 48px; }
+.statrow{ grid-template-columns:repeat(3,1fr); }
+.stat{ border-top:3px solid #002677; padding:18px 0 0; }
+.stat b{ color:#002677; font-size:34px; font-weight:600; letter-spacing:-.03em; margin-bottom:8px; }
+.stat span{ color:#6E6E6E; font-size:13px; line-height:1.45; }
+
+.fine{ border-top:1px solid #E6E9F2; color:#6E6E6E; padding:20px 0 56px; }
+.fine a{ color:#002677; }
