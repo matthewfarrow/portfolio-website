@@ -1,0 +1,40 @@
+/* Cartesi: #00F6FF cyan ground, near-black ink, small-radius black uppercase
+   buttons, Plus Jakarta Sans headings. Their heading face is on Google Fonts,
+   so this one matches exactly. */
+
+body{
+  background:#00F6FF; color:#1B1A1E;
+  font-family:"Inter", sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.stat b,.rolerow .rn{
+  font-family:"Plus Jakarta Sans", sans-serif; font-weight:500; color:#1B1A1E;
+}
+.hero{ text-align:center; }
+.hero h1{ letter-spacing:-.02em; }
+.hero .sub{ margin-left:auto; margin-right:auto; color:#1B1A1E; opacity:.78; }
+.hero .dates{ color:#1B1A1E; opacity:.6; }
+.eyebrow{ color:#1B1A1E; opacity:.6; }
+.hero .cta{ margin-left:auto; margin-right:auto; }
+
+.stats{ background:#1B1A1E; border:1px solid #1B1A1E; border-radius:4px; overflow:hidden; }
+.stat{ background:#00F6FF; padding:22px 20px; text-align:center; }
+.stat b{ color:#1B1A1E; letter-spacing:-.02em; }
+.stat span{ color:#1B1A1E; opacity:.65; }
+
+.body{ background:#F9FAFB; margin-top:8px; padding-top:64px; }
+.body h2, .body h3{ color:#1B1A1E; }
+.body p, .body li{ color:#3D3C42; }
+.body li::before{ background:#1B1A1E; border-radius:50%; }
+.rolerow{ border-bottom:1px solid #E4E5E7; }
+.rolerow:last-child{ border-bottom:0; }
+.rolerow .rd{ color:#6B6A70; }
+
+.cta{
+  background:#1B1A1E; color:#F9FAFB; border-radius:4px;
+  padding:12px 24px; text-transform:uppercase; letter-spacing:.35px; font-weight:500;
+}
+.cta:hover{ background:#000; }
+
+.foot{ background:#F9FAFB; border-top:1px solid #E4E5E7; color:#6B6A70; }
+.foot a{ color:#1B1A1E; }

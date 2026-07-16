@@ -1,0 +1,43 @@
+/* Hydrex: white, Satoshi, #0052FF pills, soft pastel wave.
+   Satoshi is not free to redistribute, so this uses Manrope, the closest
+   open geometric grotesk. */
+
+body{
+  background:#FFFFFF; color:#5A5A5A;
+  font-family:"Manrope", -apple-system, system-ui, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.eyebrow,.stat b,.rolerow .rn{ color:#0F0F0F; font-weight:600; letter-spacing:-.02em; }
+.hero h1{ letter-spacing:-.035em; }
+.eyebrow{ color:#0052FF; }
+
+/* the pastel wave under the hero, drawn not imported */
+.hero{
+  position:relative;
+  background:
+    radial-gradient(120% 90% at 12% 100%, rgba(255,236,190,.5) 0%, rgba(255,236,190,0) 55%),
+    radial-gradient(110% 90% at 44% 100%, rgba(190,240,225,.55) 0%, rgba(190,240,225,0) 55%),
+    radial-gradient(120% 90% at 76% 100%, rgba(255,214,196,.45) 0%, rgba(255,214,196,0) 55%),
+    radial-gradient(120% 90% at 98% 100%, rgba(214,214,255,.45) 0%, rgba(214,214,255,0) 55%);
+}
+.hero .sub{ color:#5A5A5A; }
+.hero .dates{ color:#8A8A8A; font-weight:500; }
+
+.stats{ background:#EDEDED; border:1px solid #EDEDED; border-radius:14px; overflow:hidden; }
+.stat{ background:#FFFFFF; padding:22px 20px; }
+.stat b{ color:#0052FF; letter-spacing:-.03em; }
+.stat span{ color:#8A8A8A; }
+
+.body li::before{ background:#0052FF; border-radius:50%; }
+.body h3{ color:#0F0F0F; font-weight:600; }
+.rolerow{ border-bottom:1px solid #EDEDED; }
+.rolerow:last-child{ border-bottom:0; }
+.rolerow .rd{ color:#8A8A8A; }
+
+.cta{
+  background:#0052FF; color:#fff; border-radius:9999px; padding:11px 22px;
+}
+.cta:hover{ background:#0041CC; }
+
+.foot{ border-top:1px solid #EDEDED; color:#8A8A8A; }
+.foot a{ color:#0052FF; }

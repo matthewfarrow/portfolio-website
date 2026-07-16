@@ -42,23 +42,23 @@
 
     <div class="s-grp">
       <p class="s-h">Experience</p>
-      <a class="s-i" href="#hydrex" data-nav>
+      <a class="s-i" href="/hydrex.html">
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2.5 13.5V6l5.5-3.5L13.5 6v7.5"/><path d="M6.5 13.5V9h3v4.5"/></svg>
         Hydrex
       </a>
-      <a class="s-i" href="#motive" data-nav>
+      <a class="s-i" href="/motive.html">
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2.5 11.5h11M4.5 11.5V7l3.5-3 3.5 3v4.5"/></svg>
         Motive
       </a>
-      <a class="s-i" href="#vastadvisor" data-nav>
+      <a class="s-i" href="/vastadvisor.html">
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2.5 12.5l3.5-4 3 2.5 4.5-6"/></svg>
         VastAdvisor
       </a>
-      <a class="s-i" href="#equitable" data-nav>
+      <a class="s-i" href="/equitable.html">
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M8 2.5v11M3 5.5h10M4.5 5.5L2.5 10h4zM11.5 5.5L9.5 10h4z"/></svg>
         Equitable Advisors
       </a>
-      <a class="s-i" href="#cartesi" data-nav>
+      <a class="s-i" href="/cartesi.html">
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 5l6-2.5L14 5l-6 2.5z"/><path d="M4.5 6.5v4c0 1 1.6 2 3.5 2s3.5-1 3.5-2v-4"/></svg>
         Cartesi
       </a>
@@ -173,7 +173,7 @@
 
       <div class="role" id="hydrex">
         <div class="r-top">
-          <span class="r-co">Hydrex</span>
+          <a class="r-co" href="/hydrex.html">Hydrex <span class="r-go">&#8250;</span></a>
           <span class="chip on">Current</span>
           <span class="chip">Full-time</span>
           <span class="chip">Quota-carrying</span>
@@ -189,7 +189,7 @@
 
       <div class="role" id="motive">
         <div class="r-top">
-          <span class="r-co">Motive</span>
+          <a class="r-co" href="/motive.html">Motive <span class="r-go">&#8250;</span></a>
           <span class="chip">Full-time</span>
           <span class="chip">2 promotions</span>
         </div>
@@ -218,7 +218,7 @@
 
       <div class="role" id="vastadvisor">
         <div class="r-top">
-          <span class="r-co">VastAdvisor</span>
+          <a class="r-co" href="/vastadvisor.html">VastAdvisor <span class="r-go">&#8250;</span></a>
           <span class="chip">Part-time</span>
           <span class="chip">Concurrent with Motive</span>
         </div>
@@ -233,7 +233,7 @@
 
       <div class="role" id="equitable">
         <div class="r-top">
-          <span class="r-co">Equitable Advisors</span>
+          <a class="r-co" href="/equitable.html">Equitable Advisors <span class="r-go">&#8250;</span></a>
           <span class="chip">Full-time</span>
         </div>
         <p class="r-meta">Jan 2024 to Sep 2024 &middot; 9 mo &middot; Austin &middot; Wealth management</p>
@@ -253,7 +253,7 @@
 
       <div class="role" id="cartesi">
         <div class="r-top">
-          <span class="r-co">Cartesi</span>
+          <a class="r-co" href="/cartesi.html">Cartesi <span class="r-go">&#8250;</span></a>
           <span class="chip">Contract</span>
         </div>
         <p class="r-meta">Sep 2023 &middot; 1 mo &middot; Remote</p>
@@ -401,10 +401,10 @@
       </div>
       <div>
         <p class="f-h">Experience</p>
-        <a href="#hydrex">Hydrex</a>
-        <a href="#motive">Motive</a>
-        <a href="#vastadvisor">VastAdvisor</a>
-        <a href="#equitable">Equitable Advisors</a>
+        <a href="/hydrex.html">Hydrex</a>
+        <a href="/motive.html">Motive</a>
+        <a href="/vastadvisor.html">VastAdvisor</a>
+        <a href="/equitable.html">Equitable Advisors</a>
       </div>
       <div>
         <p class="f-h">Writing</p>
@@ -447,7 +447,7 @@
 })();
 
 (function(){
-  var order = ['top','hydrex','motive','vastadvisor','equitable','cartesi','tropic-vote','tropic-tools','boiler','mev','background','licenses','skills','writing'];
+  var order = ['top','tropic-vote','tropic-tools','boiler','mev','background','licenses','skills','writing'];
   var links = {};
   [].forEach.call(document.querySelectorAll('.s-i[data-nav]'), function(a){
     links[a.getAttribute('href').slice(1)] = a;

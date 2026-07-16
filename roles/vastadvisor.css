@@ -1,0 +1,38 @@
+/* VastAdvisor: deep navy hero with a faint grid, gold accent, plain grotesk.
+   Their site runs on Wix and ships Helvetica-ish system faces, so Inter is a
+   close and honest stand-in. */
+
+body{
+  background:#0F1B33; color:#B4BED2;
+  font-family:"Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.stat b,.rolerow .rn{ color:#FFFFFF; font-weight:600; letter-spacing:-.02em; }
+.eyebrow{ color:#F5C24C; }
+
+/* the grid the hero is built on */
+.hero{
+  position:relative;
+  background:
+    linear-gradient(180deg,#16244080 0%,#0F1B3300 100%),
+    repeating-linear-gradient(0deg, rgba(255,255,255,.045) 0 1px, transparent 1px 96px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.045) 0 1px, transparent 1px 96px);
+}
+.hero .sub{ color:#B4BED2; }
+.hero .dates{ color:#7C88A0; }
+
+.stats{ background:#1D2A47; border:1px solid #1D2A47; border-radius:10px; overflow:hidden; }
+.stat{ background:#16223C; padding:22px 20px; }
+.stat b{ color:#F5C24C; letter-spacing:-.03em; }
+.stat span{ color:#7C88A0; }
+
+.body li::before{ background:#F5C24C; }
+.rolerow{ border-bottom:1px solid #1D2A47; }
+.rolerow:last-child{ border-bottom:0; }
+.rolerow .rd{ color:#7C88A0; }
+
+.cta{ background:#F5C24C; color:#0F1B33; border-radius:6px; padding:12px 26px; }
+.cta:hover{ background:#FFD478; }
+
+.foot{ border-top:1px solid #1D2A47; color:#7C88A0; }
+.foot a{ color:#F5C24C; }

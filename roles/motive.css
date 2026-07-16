@@ -1,0 +1,38 @@
+/* Motive: black ground, white type, blue gradient pill CTAs, tight sans.
+   MaisonNeue is licensed, so this uses Inter.
+   The gradient is deliberate here: it is Motive's actual primary button, not
+   decoration borrowed from a template. */
+
+body{
+  background:#000000; color:#B9BEC4;
+  font-family:"Inter", -apple-system, system-ui, Roboto, Arial, sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.stat b,.rolerow .rn{ color:#FFFFFF; font-weight:500; letter-spacing:-.025em; }
+.hero h1{ letter-spacing:-.035em; font-weight:500; }
+.eyebrow{ color:#4AA3F0; }
+.hero .sub{ color:#B9BEC4; }
+.hero .dates{ color:#6E757C; }
+
+.stats{ background:#1A1A1A; border:1px solid #1A1A1A; border-radius:12px; overflow:hidden; }
+.stat{ background:#0A0A0A; padding:22px 20px; }
+.stat b{
+  background:linear-gradient(90deg,#1A5FD0 0%,#4AA3F0 100%);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+  letter-spacing:-.03em;
+}
+.stat span{ color:#6E757C; }
+
+.body li::before{ background:#4AA3F0; border-radius:50%; }
+.rolerow{ border-bottom:1px solid #1A1A1A; }
+.rolerow:last-child{ border-bottom:0; }
+.rolerow .rd{ color:#6E757C; }
+
+.cta{
+  background:linear-gradient(90deg,#1A5FD0 0%,#4AA3F0 100%);
+  color:#fff; border-radius:9999px; padding:13px 30px;
+}
+.cta.ghost{ background:none; border:1px solid #FFFFFF; color:#fff; }
+
+.foot{ border-top:1px solid #1A1A1A; color:#6E757C; }
+.foot a{ color:#4AA3F0; }

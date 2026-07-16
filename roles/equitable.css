@@ -1,0 +1,31 @@
+/* Equitable Advisors: navy #002677 hero, white body, mint #00D9A7 accent,
+   big confident sans. GT-America is licensed, so this uses Inter. */
+
+body{
+  background:#FFFFFF; color:#4A4A4A;
+  font-family:"Inter", Roboto, Arial, sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.rolerow .rn{ color:#002677; font-weight:600; letter-spacing:-.02em; }
+
+.hero{ background:linear-gradient(115deg,#001B54 0%,#002677 45%,#2447C4 100%); }
+.hero h1{ color:#FFFFFF; letter-spacing:-.03em; }
+.hero .sub{ color:#C8D2EE; }
+.hero .dates{ color:#93A3D4; }
+.eyebrow{ color:#00D9A7; }
+
+.stats{ background:#E6E9F2; border:1px solid #E6E9F2; }
+.stat{ background:#FFFFFF; padding:22px 20px; }
+.stat b{ color:#002677; letter-spacing:-.03em; }
+.stat span{ color:#6E6E6E; }
+
+.body li::before{ background:#00D9A7; }
+.rolerow{ border-bottom:1px solid #E6E9F2; }
+.rolerow:last-child{ border-bottom:0; }
+.rolerow .rd{ color:#6E6E6E; }
+
+.cta{ background:#002677; color:#fff; border-radius:2px; padding:13px 28px; }
+.cta:hover{ background:#001B54; }
+
+.foot{ border-top:1px solid #E6E9F2; color:#6E6E6E; }
+.foot a{ color:#002677; }
