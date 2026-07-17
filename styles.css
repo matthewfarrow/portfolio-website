@@ -170,14 +170,24 @@ a.r-co:hover .r-go{ color:var(--accent); }
   font-family:var(--mono); font-size:9.5px; font-weight:500; letter-spacing:.08em;
   text-transform:uppercase; color:var(--accent-2);
 }
-.role ul{ list-style:none; }
+/* docs-style bullets: a small round dot, not a dash */
+.role ul{ list-style:none; margin-top:8px; }
 .role li{
-  font-size:13px; line-height:1.55; color:var(--body);
-  padding-left:14px; position:relative; margin-top:3px;
+  font-size:13.5px; line-height:1.65; color:var(--body);
+  padding-left:18px; position:relative; margin-bottom:7px; max-width:74ch;
 }
-.role li::before{ content:"-"; position:absolute; left:0; color:var(--line-2); }
+.role li:last-child{ margin-bottom:0; }
+.role li::before{
+  content:""; position:absolute; left:2px; top:.62em;
+  width:5px; height:5px; border-radius:50%; background:var(--line-2);
+}
 .role li b{ color:var(--ink); font-weight:600; }
-.note{ font-size:12.5px; color:var(--muted); margin-top:8px; padding-left:14px; }
+/* their info callout, for the one line that corrects a number */
+.note{
+  font-size:12.5px; line-height:1.6; color:var(--muted); margin-top:12px;
+  background:var(--card); border-left:2px solid var(--line-2);
+  border-radius:0 6px 6px 0; padding:10px 14px;
+}
 
 /* ---------- timeline ---------- */
 
@@ -187,14 +197,10 @@ a.r-co:hover .r-go{ color:var(--accent); }
 .g-track{ position:relative; height:10px; background:#fff; border:1px solid var(--line); border-radius:2px; }
 .g-bar{ position:absolute; top:0; bottom:0; border-radius:2px; }
 .g-bar.solid{ background:var(--wash); border:1px solid var(--accent); }
-/* hatch fills are a chart convention, not decoration: the only gradients in the file */
+/* the part-time hatch is a chart convention, not decoration: the only gradient here */
 .g-bar.hatch{
   background:repeating-linear-gradient(45deg, var(--wash), var(--wash) 3px, transparent 3px, transparent 6px);
   border:1px solid var(--wash);
-}
-.g-bar.gap{
-  background:repeating-linear-gradient(45deg, transparent, transparent 3px, var(--line-2) 3px, var(--line-2) 4px);
-  border:1px dashed var(--line-2);
 }
 .g-ticks{ position:relative; height:14px; margin:8px 0 0 100px; }
 .g-ticks span{ position:absolute; font-family:var(--mono); font-size:9px; color:var(--muted); }
