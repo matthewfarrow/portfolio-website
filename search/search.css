@@ -7,6 +7,7 @@
   --blue:   #4285F4;
   --red:    #EA4335;
   --yellow: #FBBC05;
+  --green:  #34A853;
 
   --link:      #1a0dab;
   --visited:   #681da8;
@@ -125,12 +126,16 @@ button{ font-family:inherit; cursor:pointer; }
   padding:0 20px; margin-top:min(16vh,146px);
 }
 .logo{
-  font-family:var(--logo); font-weight:600; font-size:92px; letter-spacing:-.045em;
-  line-height:1; margin-bottom:26px; user-select:none;
+  font-family:var(--logo); font-weight:600;
+  /* a full name is far wider than a 4-letter word: scale it and let the two
+     words wrap on narrow screens instead of overflowing. */
+  font-size:clamp(40px, 7.2vw, 68px); letter-spacing:-.03em;
+  line-height:1.04; margin-bottom:26px; user-select:none; text-align:center;
 }
 .logo .b{ color:var(--blue); }
 .logo .r{ color:var(--red); }
 .logo .y{ color:var(--yellow); }
+.logo .g{ color:var(--green); }
 
 .sbox-wrap{ width:100%; max-width:584px; position:relative; }
 .sbox{
@@ -211,6 +216,8 @@ button{ font-family:inherit; cursor:pointer; }
 .rlogo{ font-family:var(--logo); font-weight:600; font-size:27px; letter-spacing:-.04em; flex:none; }
 .rlogo .b{ color:var(--blue); } .rlogo .r{ color:var(--red); }
 .rlogo .y{ color:var(--yellow); }
+.rlogo .g{ color:var(--green); }
+.rlogo{ white-space:nowrap; }
 .rbox{
   display:flex; align-items:center; gap:12px; flex:1; max-width:600px;
   height:44px; padding:0 16px; border:1px solid var(--line); border-radius:24px;
