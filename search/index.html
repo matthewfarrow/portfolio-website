@@ -24,9 +24,33 @@
 <nav class="top">
   <a href="/">Docs version</a>
   <a href="https://www.linkedin.com/in/mattdfarrow" target="_blank" rel="noopener">LinkedIn</a>
-  <button class="grid-btn" id="apps" aria-label="Matt apps">
-    <svg viewBox="0 0 24 24"><path d="M6 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6-8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6-8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
-  </button>
+  <div class="apps-wrap" id="apps-wrap">
+    <button class="grid-btn" id="apps" aria-label="Things Matt built" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><path d="M6 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6-8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6-8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+    </button>
+    <!-- their apps drawer, holding the things he actually shipped -->
+    <div class="apps-panel" id="apps-panel">
+      <a href="https://tropic.vote" target="_blank" rel="noopener">
+        <span class="app-ico" style="background:#4285F4">TV</span><span>Tropic&nbsp;Vote</span>
+      </a>
+      <a href="https://tropic-tools.vercel.app" target="_blank" rel="noopener">
+        <span class="app-ico" style="background:#34A853">TT</span><span>Tropic&nbsp;Tools</span>
+      </a>
+      <a href="https://www.boilerblockchain.org/" target="_blank" rel="noopener">
+        <span class="app-ico" style="background:#FBBC05">BB</span><span>Boiler</span>
+      </a>
+      <a href="results.html?q=mev">
+        <span class="app-ico" style="background:#EA4335">MEV</span><span>MEV&nbsp;bot</span>
+      </a>
+      <a href="/hydrex.html"><span class="app-ico" style="background:#4285F4">HX</span><span>Hydrex</span></a>
+      <a href="/motive.html"><span class="app-ico" style="background:#5F6368">MO</span><span>Motive</span></a>
+      <a href="/purdue.html"><span class="app-ico" style="background:#8E7F55">PU</span><span>Purdue</span></a>
+      <a href="/"><span class="app-ico" style="background:#0F1114">MF</span><span>Docs</span></a>
+      <a href="https://github.com/matthewfarrow" target="_blank" rel="noopener">
+        <span class="app-ico" style="background:#5F6368">GH</span><span>GitHub</span>
+      </a>
+    </div>
+  </div>
   <a class="avatar" href="https://t.me/mattfarrow" target="_blank" rel="noopener" aria-label="Get in touch">MF</a>
 </nav>
 
@@ -102,11 +126,31 @@
 <script>
 (function(){
   var wrap=document.getElementById('wrap'), box=document.getElementById('sbox'), q=document.getElementById('q');
+  var sugg=document.getElementById('sugg');
+  var rows=[].slice.call(sugg.querySelectorAll('a'));
+
   function open(){ wrap.classList.add('on'); box.classList.add('on'); }
   function close(){ wrap.classList.remove('on'); box.classList.remove('on'); }
+
+  /* filter the drop as you type, the way a real suggest does. If nothing
+     matches, close it rather than leave an empty rounded box hanging open. */
+  function filter(){
+    var v = q.value.trim().toLowerCase();
+    var shown = 0;
+    rows.forEach(function(a){
+      var hit = !v || a.textContent.toLowerCase().indexOf(v) !== -1;
+      a.style.display = hit ? '' : 'none';
+      if (hit) shown++;
+    });
+    sugg.querySelector('.sugg-hd').style.display = shown ? '' : 'none';
+    if (shown) open(); else close();
+  }
+
   q.addEventListener('focus', open);
+  q.addEventListener('input', filter);
   document.addEventListener('click', function(e){ if(!wrap.contains(e.target)) close(); });
-  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ close(); q.blur(); } });
+
   // an empty search should still go somewhere useful
   wrap.addEventListener('submit', function(e){
     if(!q.value.trim()){ e.preventDefault(); location.href='results.html?q=experience'; }
@@ -114,7 +158,20 @@
   document.getElementById('lucky').addEventListener('click', function(){
     location.href = q.value.trim() ? 'results.html?q='+encodeURIComponent(q.value.trim()) : '/hydrex.html';
   });
-  document.getElementById('apps').addEventListener('click', function(){ location.href='results.html?q=built'; });
+
+  var aw=document.getElementById('apps-wrap'), ab=document.getElementById('apps');
+  ab.addEventListener('click', function(e){
+    e.stopPropagation();
+    var on = aw.classList.toggle('on');
+    ab.setAttribute('aria-expanded', on ? 'true' : 'false');
+    if (on) close();
+  });
+  document.addEventListener('click', function(e){
+    if(!aw.contains(e.target)){ aw.classList.remove('on'); ab.setAttribute('aria-expanded','false'); }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key==='Escape'){ aw.classList.remove('on'); ab.setAttribute('aria-expanded','false'); }
+  });
 })();
 </script>
 
