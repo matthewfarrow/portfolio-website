@@ -47,7 +47,7 @@ h1{ color:#0F0F0F; font-size:clamp(30px,3.4vw,40px); font-weight:600; letter-spa
 .swap-sec{ padding:64px 0 56px; }
 /* every section heading matches hydrex.fi: flat 36px, weight 600, centred, no
    tracking. measured off the live site. */
-.swap-sec h2, .trusted h2, .numbers h2, .onbase h2, .mech h2, .start h2{
+.swap-sec h2, .trusted h2, .numbers h2, .onbase h2, .mech h2, .start h2, .aprchart h2{
   text-align:center; color:#0F0F0F; font-size:clamp(27px,3.4vw,36px);
   font-weight:600; letter-spacing:normal; line-height:1.12; margin-bottom:8px;
 }
@@ -138,19 +138,25 @@ h1{ color:#0F0F0F; font-size:clamp(30px,3.4vw,40px); font-weight:600; letter-spa
 /* their "Next-gen protocol mechanics." cards, with a pastel blob in one corner */
 /* a real APR chart of my own Tropic Tools data, styled to the Hydrex look.
    static bar widths, no motion, so nothing to gate or freeze. */
-.aprchart{ background:#F7F7F7; padding:64px 0; }
-.apr{ max-width:620px; margin:0 auto; }
-.apr-row{ display:grid; grid-template-columns:170px 1fr 58px; align-items:center; gap:16px; margin-bottom:14px; }
+.aprchart{ background:#F7F7F7; padding:84px 0; }
+/* the subtitle carries the gap down to the bars so the block reads as one
+   centered column, not a left-aligned title floating over centered bars */
+.aprchart .n-sub{ text-align:center; color:#6B6B6B; font-size:14px; max-width:56ch; margin:0 auto 44px; }
+.apr{ max-width:640px; margin:0 auto; }
+.apr-row{ display:grid; grid-template-columns:180px 1fr 58px; align-items:center; gap:22px; margin-bottom:26px; }
+.apr-row:last-child{ margin-bottom:0; }
 .apr-lab{ font-size:13px; font-weight:600; color:#0F0F0F; text-align:right; }
-.apr-track{ height:22px; background:#EAEAEA; border-radius:6px; overflow:hidden; }
-.apr-fill{ display:block; height:100%; background:#0052FF; border-radius:6px; }
+.apr-track{ height:28px; background:#EAEAEA; border-radius:7px; overflow:hidden; }
+.apr-fill{ display:block; height:100%; background:#0052FF; border-radius:7px; }
 .apr-fill.mut{ background:#C3C9D4; }
-.apr-val{ font-size:15px; font-weight:700; color:#0F0F0F; letter-spacing:-.02em; }
-.apr-note{ max-width:560px; margin:22px auto 0; text-align:center; color:#6B6B6B; font-size:13px; line-height:1.6; }
+.apr-val{ font-size:16px; font-weight:700; color:#0F0F0F; letter-spacing:-.02em; }
+.apr-note{ max-width:560px; margin:44px auto 0; text-align:center; color:#6B6B6B; font-size:13px; line-height:1.6; }
 .apr-note b{ color:#0052FF; font-weight:700; }
 @media (max-width:560px){
-  .apr-row{ grid-template-columns:110px 1fr 46px; gap:10px; }
+  .aprchart{ padding:60px 0; }
+  .apr-row{ grid-template-columns:104px 1fr 46px; gap:12px; margin-bottom:20px; }
   .apr-lab{ font-size:11.5px; }
+  .apr-track{ height:24px; }
 }
 
 .mech{ background:#fff; padding:72px 0 64px; }
