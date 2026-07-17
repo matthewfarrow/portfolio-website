@@ -127,10 +127,9 @@ button{ font-family:inherit; cursor:pointer; }
 }
 .logo{
   font-family:var(--logo); font-weight:600;
-  /* a full name is far wider than a 4-letter word: scale it and let the two
-     words wrap on narrow screens instead of overflowing. */
-  font-size:clamp(40px, 7.2vw, 68px); letter-spacing:-.03em;
-  line-height:1.04; margin-bottom:26px; user-select:none; text-align:center;
+  /* one short word again: scale it back up toward the original size */
+  font-size:clamp(52px, 10vw, 92px); letter-spacing:-.03em;
+  line-height:1; margin-bottom:26px; user-select:none; text-align:center;
 }
 .logo .b{ color:var(--blue); }
 .logo .r{ color:var(--red); }
