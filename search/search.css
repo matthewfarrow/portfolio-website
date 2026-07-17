@@ -59,7 +59,10 @@ button{ font-family:inherit; cursor:pointer; }
 /* the apps drawer */
 .apps-panel{
   display:none; position:absolute; right:0; top:44px; z-index:40;
-  width:302px; background:#fff; border:1px solid #dadce0; border-radius:8px;
+  /* a fixed 302px hangs off the left edge on a 320px screen: cap it to the
+     viewport minus the gutter it sits in. */
+  width:min(302px, calc(100vw - 24px));
+  background:#fff; border:1px solid #dadce0; border-radius:8px;
   box-shadow:0 4px 12px rgba(32,33,36,.28);
   padding:14px 6px; grid-template-columns:repeat(3,1fr); gap:2px;
 }
@@ -73,6 +76,11 @@ button{ font-family:inherit; cursor:pointer; }
   width:34px; height:34px; border-radius:50%; color:#fff;
   display:flex; align-items:center; justify-content:center;
   font-family:"IBM Plex Mono", monospace; font-size:11px; font-weight:600; letter-spacing:.02em;
+}
+@media (max-width:430px){
+  /* right:0 anchors to the button, not the viewport, so on a narrow screen the
+     drawer's left edge ran off at -44px. Pin it to the viewport instead. */
+  .apps-panel{ position:fixed; top:52px; right:12px; left:auto; width:calc(100vw - 24px); }
 }
 .avatar{
   width:32px; height:32px; border-radius:50%; background:var(--blue); color:#fff;
