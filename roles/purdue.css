@@ -66,6 +66,57 @@ h1{
 }
 .search-in svg{ width:15px; height:15px; stroke:#6A6A6A; flex:none; }
 
+/* their most-popular row under the input */
+.pop{
+  max-width:620px; margin:14px auto 0; display:flex; flex-wrap:wrap; gap:6px 14px;
+  align-items:baseline; font-size:11.5px;
+}
+.pop span{
+  font-family:"Oswald", Arial, sans-serif; letter-spacing:.12em;
+  text-transform:uppercase; color:#8A8A8A;
+}
+.pop a{ color:#CFB991; }
+.pop a:hover{ color:#E3D2AE; }
+
+/* their four cards: two flat, one gold, one dark */
+.pcards-wrap{ background:#0C0C0C; padding:36px 0 44px; }
+.pcards{ display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+.pc{
+  min-height:150px; border-radius:2px; padding:18px;
+  display:flex; flex-direction:column; text-decoration:none; position:relative;
+}
+/* their photo cards cannot use their photography, so these are flat gold ramp */
+.pc-photo{ background:linear-gradient(160deg,#3A362A 0%,#1C1A15 100%); border:1px solid #2A2820; }
+.pc-photo.alt{ background:linear-gradient(160deg,#2A2C33 0%,#15161A 100%); border-color:#23252B; }
+.pc-k{
+  font-family:"Oswald", Arial, sans-serif; font-size:10px; letter-spacing:.14em;
+  text-transform:uppercase; color:#CFB991; margin-bottom:8px;
+}
+.pc-t{
+  font-family:"Oswald", Arial, sans-serif; color:#fff; font-size:19px;
+  font-weight:600; line-height:1.15; text-transform:uppercase; letter-spacing:.01em;
+}
+.pc-go{
+  position:absolute; right:14px; bottom:12px; width:22px; height:22px; border-radius:50%;
+  background:#CFB991; color:#000; display:flex; align-items:center; justify-content:center;
+  font-size:14px; line-height:1;
+}
+.pc-photo:hover{ border-color:#CFB991; }
+.pc-gold{ background:#CFB991; justify-content:flex-end; }
+.pc-gold b{
+  font-family:"Oswald", Arial, sans-serif; color:#000; font-size:46px;
+  font-weight:700; line-height:1; margin-bottom:8px;
+}
+.pc-gold span{ color:#2B2B2B; font-size:12px; line-height:1.4; }
+.pc-dark{ background:#1A1A1A; border:1px solid #2A2A2A; justify-content:flex-end; }
+.pc-dark b{
+  font-family:"Oswald", Arial, sans-serif; color:#CFB991; font-size:46px;
+  font-weight:700; line-height:1; margin-bottom:8px;
+}
+.pc-dark span{ color:#9A9A9A; font-size:12px; line-height:1.4; }
+@media (max-width:860px){ .pcards{ grid-template-columns:1fr 1fr; } }
+@media (max-width:480px){ .pcards{ grid-template-columns:1fr; } }
+
 .numbers{ padding:44px 0 0; }
 .statrow{ grid-template-columns:repeat(4,1fr); }
 .stat{ background:#0C0C0C; border:1px solid #1E1E1E; padding:20px 18px; }
