@@ -91,8 +91,53 @@ h1{ color:#fff; font-size:clamp(34px,3.9vw,52px); font-weight:500; line-height:1
 .tile:hover{ border-color:#2F7DE0; }
 @media (max-width:860px){ .tiles{ grid-template-columns:repeat(3,1fr); } }
 
-.fine{ background:#fff; color:#5F5F5F; padding:0 0 56px; }
-.fine a{ color:#1341A8; }
+/* their alternating feature rows: dark, a claim left, a bracketed frame right */
+.feat-rows{ background:#000; padding:8px 0 88px; }
+.frow{ display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; padding:44px 0; }
+.frow.rev .fr-txt{ order:2; }
+.fr-eye{ display:block; font-size:12px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:#4AA3F0; margin-bottom:16px; }
+.fr-txt h3{ color:#fff; font-size:clamp(24px,2.6vw,34px); font-weight:500; letter-spacing:-.02em; line-height:1.15; margin-bottom:14px; }
+.fr-txt p{ color:#9AA1A9; font-size:16px; line-height:1.6; max-width:44ch; }
+.fr-shot{ display:flex; justify-content:center; }
+.fr-frame{
+  position:relative; width:100%; max-width:400px; border-radius:14px; padding:40px 28px;
+  background:linear-gradient(160deg,#0C1119 0%,#0A0D12 60%,#0B1017 100%);
+  border:1px solid #171C24; text-align:center;
+}
+.fr-frame::before, .fr-frame::after{ content:""; position:absolute; width:26px; height:26px; pointer-events:none; }
+.fr-frame::before{ top:-1px; left:-1px; border-top:2px solid #2F7DE0; border-left:2px solid #2F7DE0; border-radius:14px 0 0 0; }
+.fr-frame::after{ bottom:-1px; right:-1px; border-bottom:2px solid #2F7DE0; border-right:2px solid #2F7DE0; border-radius:0 0 14px 0; }
+.fr-frame b{
+  display:block; font-size:34px; font-weight:600; letter-spacing:-.03em; margin-bottom:10px;
+  background:linear-gradient(90deg,#1A5FD0 0%,#4AA3F0 100%);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.fr-frame span{ color:#8B9199; font-size:13.5px; }
+@media (max-width:860px){
+  .frow, .frow.rev{ grid-template-columns:1fr; gap:28px; }
+  .frow.rev .fr-txt{ order:0; }
+}
+
+/* their dark footer, with a MATT FARROW watermark instead of theirs */
+.mfoot{ background:#0A0A0A; border-top:1px solid #171C24; color:#8B9199; }
+.mfoot-in{ display:grid; grid-template-columns:1.4fr 2fr; gap:48px; padding:56px 0 40px; }
+.mf-mark{ font-family:"IBM Plex Mono", ui-monospace, Menlo, monospace; font-size:15px; font-weight:600; letter-spacing:.04em; color:#fff; margin-bottom:18px; }
+.mf-brand p{ font-size:13px; line-height:1.65; color:#767D84; max-width:46ch; margin-bottom:18px; }
+.mf-soc{ display:flex; gap:18px; }
+.mf-soc a{ color:#fff; font-size:13px; font-weight:500; }
+.mf-soc a:hover{ color:#4AA3F0; }
+.mf-cols{ display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+.mf-h{ color:#fff; font-size:13px; font-weight:600; margin-bottom:14px; }
+.mf-col a{ display:block; color:#9AA1A9; font-size:13.5px; margin-bottom:10px; }
+.mf-col a:hover{ color:#fff; }
+/* constrained to the same column as .mfoot-in so it aligns, not full-bleed */
+.mf-bar{ max-width:1280px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:16px; border-top:1px solid #171C24; padding:18px 28px 24px; font-size:12.5px; color:#767D84; }
+.mf-bar a{ color:#fff; }
+@media (max-width:720px){
+  .mfoot-in{ grid-template-columns:1fr; gap:32px; }
+  .mf-cols{ grid-template-columns:1fr 1fr; }
+  .mf-bar{ flex-direction:column; align-items:flex-start; gap:8px; }
+}
 
 @media (max-width:860px){
   /* the pill cannot hold Contact + LinkedIn + the CTA on a phone: it pushed

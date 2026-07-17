@@ -54,12 +54,15 @@ a{ color:inherit; text-decoration:none; }
 .tn-c{ display:flex; gap:26px; margin:0 auto; }
 .tn-c a{ font-size:14px; color:var(--ink); }
 .tn-c a:hover{ color:var(--accent); }
-.tn-r{ display:flex; align-items:center; gap:12px; }
+.tn-r{ display:flex; align-items:center; gap:16px; }
+.tn-alt{ font-size:14px; color:var(--ink); white-space:nowrap; }
+.tn-alt:hover{ color:var(--accent); }
 .btn{
   background:var(--ink); color:#fff; font-size:13px; font-weight:500;
   padding:8px 16px; border-radius:999px; white-space:nowrap;
 }
 .btn:hover{ background:#000; }
+@media (max-width:640px){ .tn-alt{ display:none; } }
 
 /* ---------- shell ---------- */
 
