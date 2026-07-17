@@ -24,6 +24,12 @@
 *{ margin:0; padding:0; box-sizing:border-box; }
 
 html{ scroll-behavior:smooth; }
+/* the top nav is fixed, so anchor jumps must leave room for it or the target
+   heading lands hidden under the bar. Pad the scroll by the nav height plus a
+   little breathing room so you always see where you landed. */
+html{ scroll-padding-top:calc(var(--nav-h) + 24px); }
+/* belt and suspenders for the anchor targets themselves */
+.sec[id], .card[id], .role[id]{ scroll-margin-top:calc(var(--nav-h) + 24px); }
 
 body{
   background:var(--bg);
