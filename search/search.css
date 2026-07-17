@@ -126,9 +126,11 @@ button{ font-family:inherit; cursor:pointer; }
   padding:0 20px; margin-top:min(16vh,146px);
 }
 .logo{
-  font-family:var(--logo); font-weight:600;
-  /* one short word again: scale it back up toward the original size */
-  font-size:clamp(52px, 10vw, 92px); letter-spacing:-.03em;
+  font-family:var(--logo); font-weight:500;
+  /* one short word again: scale it back up toward the original size.
+     medium weight and light tracking read closer to the real logo than the
+     semibold it was, using the free geometric this page already loads. */
+  font-size:clamp(52px, 10vw, 92px); letter-spacing:-.018em;
   line-height:1; margin-bottom:26px; user-select:none; text-align:center;
 }
 .logo .b{ color:var(--blue); }
@@ -212,7 +214,7 @@ button{ font-family:inherit; cursor:pointer; }
 
 .rhead{ border-bottom:1px solid var(--line); position:sticky; top:0; background:#fff; z-index:10; }
 .rhead-in{ display:flex; align-items:center; gap:26px; padding:16px 20px 0; }
-.rlogo{ font-family:var(--logo); font-weight:600; font-size:27px; letter-spacing:-.04em; flex:none; }
+.rlogo{ font-family:var(--logo); font-weight:500; font-size:27px; letter-spacing:-.02em; flex:none; }
 .rlogo .b{ color:var(--blue); } .rlogo .r{ color:var(--red); }
 .rlogo .y{ color:var(--yellow); }
 .rlogo .g{ color:var(--green); }
