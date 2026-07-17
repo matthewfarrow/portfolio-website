@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matt Farrow</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg?v=6">
+<link rel="stylesheet" href="search.css">
+</head>
+<body>
+
+<div class="mfbar">
+  <a href="/">&#8249;&nbsp; Matt Farrow</a>
+  <span class="sep">/</span>
+  <span>Search version</span>
+  <span class="who">Two versions of this site. This one, and the <a href="/">docs one</a>.</span>
+</div>
+
+<header class="rhead">
+  <form class="rhead-in" action="results.html" method="get">
+    <a class="rlogo" href="./" aria-label="Matt"><span class="b">M</span><span class="r">a</span><span class="y">t</span><span class="b">t</span></a>
+    <div class="rbox">
+      <input id="q" name="q" autocomplete="off" aria-label="Ask Matt">
+      <svg class="mag" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+    </div>
+    <nav class="top">
+      <a href="/">Docs version</a>
+      <a class="avatar" href="https://t.me/mattfarrow" target="_blank" rel="noopener">MF</a>
+    </nav>
+  </form>
+  <nav class="tabs" id="tabs"></nav>
+</header>
+
+<main class="rmain">
+  <div>
+    <p class="stats" id="stats"></p>
+    <div id="results"></div>
+
+    <section class="paa">
+      <h2>People also ask</h2>
+      <details>
+        <summary>Does he actually carry a quota?</summary>
+        <div class="ans">Yes, at Hydrex, right now. Business Development, Ecosystem and Partnerships, full-time since Nov 2025. Before that, eleven months at Motive carrying one there. <a href="/hydrex.html">See the Hydrex page</a>.</div>
+      </details>
+      <details>
+        <summary>Did he manage the $1.93B?</summary>
+        <div class="ans">No. Their assets, not his. He sold five institutional advisors the software they run $1.93B on, which is a different job. His own LinkedIn says "onboarded" and that word is wrong. <a href="/vastadvisor.html">See the VastAdvisor page</a>.</div>
+      </details>
+      <details>
+        <summary>Is Tropic Vote a Hydrex product?</summary>
+        <div class="ans">No, it is his own. He works in partnerships at Hydrex and built Tropic Vote on Hydrex's ve(3,3) governance, so the 5% protocol fee accrues to Tropic Vote rather than to his employer. Worth knowing before you read the numbers. <a href="https://tropic.vote" target="_blank" rel="noopener">tropic.vote</a>.</div>
+      </details>
+      <details>
+        <summary>Can he build, or does he just sell?</summary>
+        <div class="ans">Both, and that is the whole point. He does the product, the frontend and the partner side of Tropic Vote. He does not write the contracts or run the keeper. <a href="results.html?q=built">See what he has built</a>.</div>
+      </details>
+    </section>
+
+    <section class="rel">
+      <h2>Related searches</h2>
+      <div class="rel-grid" id="rel"></div>
+    </section>
+  </div>
+
+  <aside class="kp">
+    <div class="kp-badge">MF</div>
+    <h2>Matt Farrow</h2>
+    <p class="kp-sub">Business Development at Hydrex</p>
+    <dl>
+      <div><dt>Currently:</dt><dd><a href="/hydrex.html">Hydrex</a>, Ecosystem and Partnerships, Nov 2025 to present</dd></div>
+      <div><dt>Based:</dt><dd>Austin, Texas</dd></div>
+      <div><dt>Licenses:</dt><dd>FINRA Series 7, May 2024. SIE, Mar 2024</dd></div>
+      <div><dt>Education:</dt><dd><a href="/purdue.html">Purdue University</a>, B.S. Economics</dd></div>
+      <div><dt>Built:</dt><dd><a href="https://tropic.vote" target="_blank" rel="noopener">Tropic Vote</a>, a ve(3,3) vote optimizer on Base</dd></div>
+      <div><dt>Known for:</dt><dd>Selling the thing and building the thing</dd></div>
+    </dl>
+    <div class="kp-links">
+      <a href="https://t.me/mattfarrow" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://www.linkedin.com/in/mattdfarrow" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/matthewfarrow" target="_blank" rel="noopener">GitHub</a>
+      <a href="/">Docs version</a>
+    </div>
+  </aside>
+</main>
+
+<script>
+/* The index. Every figure here is the same one the docs version publishes. */
+var DB = [
+  { tag:['experience','hydrex','now','current','quota','base','ve(3,3)','partnerships','bd'],
+    site:'mattfarrow.xyz', crumb:'https://mattfarrow.xyz › hydrex', href:'/hydrex.html',
+    title:'Hydrex, Business Development and Ecosystem Partnerships',
+    date:'Nov 2025 to present',
+    snip:'I carry a quota for Base’s liquidity engine. Hydrex is a decentralized exchange and liquidity hub purpose-built for Base. I own partner growth: the relationships, the incentive design, and the product decisions that follow.',
+    links:[['Tropic Vote','https://tropic.vote']] },
+
+  { tag:['experience','motive','sales','saas','enterprise','promotion','pipeline','acv','austin'],
+    site:'mattfarrow.xyz', crumb:'https://mattfarrow.xyz › motive', href:'/motive.html',
+    title:'Motive, Sales Development, Mid-Market to Senior Enterprise',
+    date:'Oct 2024 to Aug 2025',
+    snip:'Eleven months, two promotions. <b>$523K</b> closed-won annual contract value Jan to Jun 2025, <b>$1.14M</b> late-stage pipeline at close of tenure, and <b>132%</b> average Q4 attainment in Mid-Market.' },
+
+  { tag:['experience','vastadvisor','aum','institutional','advisors','ria','part-time','software'],
+    site:'mattfarrow.xyz', crumb:'https://mattfarrow.xyz › vastadvisor', href:'/vastadvisor.html',
+    title:'VastAdvisor, Business Development',
+    date:'Jan 2025 to Aug 2025',
+    snip:'Sold software supporting <b>$1.93B</b> of AUM across 5 institutional advisors. <b>85%</b> of qualified discovery calls converted to demos. Part-time, and it ran entirely inside the full-time Motive tenure, so it adds no months.' },
+
+  { tag:['experience','equitable','series 7','sie','cold calls','wealth','finra','licenses'],
+    site:'mattfarrow.xyz', crumb:'https://mattfarrow.xyz › equitable', href:'/equitable.html',
+    title:'Equitable Advisors, Wealth Management and Business Development',
+    date:'Jan 2024 to Sep 2024',
+    snip:'Where the Series 7 came from. <b>5,003</b> cold calls at a <b>38%</b> contact-to-meeting ratio, including <b>1,006</b> in a single week at 201% of target. Passing the Series 7 is what moved me into the Associate seat that same month.' },
+
+  { tag:['experience','cartesi','rollups','lecture','ethereum','contract','teaching'],
+    site:'mattfarrow.xyz', crumb:'https://mattfarrow.xyz › cartesi', href:'/cartesi.html',
+    title:'Cartesi, Guest Lecturer',
+    date:'Sep 2023',
+    snip:'A one-month contract to build and deliver a lecture on Ethereum mechanics, optimistic rollups and the Linux-based execution environment, to a room of Purdue undergraduates.' },
+
+  { tag:['built','tropic vote','tropic','protocol','ve(3,3)','base','defi','solidity','flagship'],
+    site:'tropic.vote', crumb:'https://tropic.vote', href:'https://tropic.vote', ext:true,
+    title:'Tropic Vote, non-custodial vote optimization on Base',
+    snip:'Holders delegate earning power only. The veNFT never leaves their wallet and they can withdraw at any time. It votes and claims every epoch, routing to the best marginal expected value. Holders keep 95%. <b>Mine, not Hydrex’s.</b>' },
+
+  { tag:['built','tropic tools','apr','rankings','ve','analysis'],
+    site:'tropic-tools.vercel.app', crumb:'https://tropic-tools.vercel.app', href:'https://tropic-tools.vercel.app', ext:true,
+    title:'Tropic Tools, ve token APR rankings',
+    snip:'What a ve token bought at market actually pays you to vote, so a holder can see what a lock is worth against the alternatives instead of taking a protocol’s word for it.' },
+
+  { tag:['built','boiler blockchain','purdue','club','education','co-founder','president'],
+    site:'boilerblockchain.org', crumb:'https://boilerblockchain.org', href:'https://www.boilerblockchain.org/', ext:true,
+    title:'Boiler Blockchain, co-founder and president',
+    snip:'Purdue’s first blockchain club, zero to <b>150+</b> students in its first semester. Helped design and teach Purdue’s first undergraduate blockchain course.' },
+
+  { tag:['built','mev','bot','mongodb','python','on-chain','private'],
+    site:'mattfarrow.xyz', crumb:'https://mattfarrow.xyz › built', href:'/#built',
+    title:'Delta-neutral MEV bot, private',
+    snip:'A custom intelligence platform with a MongoDB on-chain data backbone underneath it. No public link, happy to walk through it.' },
+
+  { tag:['education','purdue','economics','degree','boiler blockchain','phi kappa psi'],
+    site:'mattfarrow.xyz', crumb:'https://mattfarrow.xyz › purdue', href:'/purdue.html',
+    title:'Purdue University, B.S. Economics',
+    date:'Aug 2019 to Dec 2023',
+    snip:'Started in First-Year Engineering and Biological Engineering, then transferred into Economics to follow crypto research and trading. Co-founded Boiler Blockchain along the way.' },
+
+  { tag:['education','licenses','series 7','sie','finra','insurance','crd'],
+    site:'mattfarrow.xyz', crumb:'https://mattfarrow.xyz › licenses', href:'/#licenses',
+    title:'Licenses, FINRA Series 7, SIE and California insurance',
+    snip:'FINRA Series 7, General Securities Representative, May 2024. Securities Industry Essentials, Mar 2024. Life, Accident and Health Producer, California, 2024.' },
+
+  { tag:['writing','risk','medium','essay','framework'],
+    site:'medium.com', crumb:'https://medium.com › boilerblockchain', href:'https://medium.com/boilerblockchain/risk-a-new-conceptual-framework-6a9c3ee89366', ext:true,
+    title:'Risk: a New Conceptual Framework',
+    snip:'Risk describes the sacred ability of man to bargain with the future. It is our understanding of uncertainty and risk that mediates the relationship our present-self has with our future-self.' },
+
+  { tag:['writing','airdrops','medium','essay','portfolio'],
+    site:'medium.com', crumb:'https://medium.com › boilerblockchain', href:'https://medium.com/boilerblockchain/airdrops-the-seed-for-my-million-dollar-portfolio-79f14d2b6d06', ext:true,
+    title:'Airdrops: The Seed for My Million Dollar Portfolio',
+    snip:'How strategic participation in blockchain airdrops became the foundation of a crypto portfolio, and what the strategy actually was.' },
+
+  { tag:['writing','zk','rollups','medium','guide','scaling'],
+    site:'medium.com', crumb:'https://medium.com › @matt_farrow', href:'https://medium.com/@matt_farrow/a-guide-to-zero-knowledge-rollups-a-blockchain-scaling-solution-9ca021af5bc5', ext:true,
+    title:'A Guide to Zero-Knowledge Rollups',
+    snip:'Zero-knowledge rollups as a scaling solution: the technical mechanisms, the implementation approaches, and their role in Ethereum scaling.' },
+
+  { tag:['writing','uniswap','case study','medium','defi'],
+    site:'medium.com', crumb:'https://medium.com › boilerblockchain', href:'https://boilerblockchain.medium.com/industry-case-study-uniswap-b0293ec44ef2', ext:true,
+    title:'Industry Case Study: Uniswap',
+    snip:'An analysis of Uniswap’s architecture and its impact on decentralized finance, and the mechanisms that power it.' },
+
+  { tag:['writing','ethereum','whitepaper','spotify','podcast','narration'],
+    site:'open.spotify.com', crumb:'https://open.spotify.com › episode', href:'https://open.spotify.com/episode/1PzYbgy1CFaf81AHORhcEc', ext:true,
+    title:'The Ethereum Whitepaper, narrated',
+    snip:'The whole thing, out loud, start to finish. I recommend it at 1x.' },
+
+  { tag:['writing','podcast','spotify','bitcoin','host'],
+    site:'open.spotify.com', crumb:'https://open.spotify.com › show', href:'https://open.spotify.com/show/3L2fhqj9PuiwztZdamjg0W', ext:true,
+    title:'Matt Farrow Podcast, host',
+    snip:'The mechanism, philosophy and history of blockchain, through important concepts, interviews, and narrations of the foundational papers.' },
+
+  { tag:['writing','youtube','video','tutorials','zksync'],
+    site:'youtube.com', crumb:'https://youtube.com › channel', href:'https://www.youtube.com/channel/UCIKcIjJHTc9QfsULSZ2nM0w', ext:true,
+    title:'YouTube, video essays, tutorials and shorts',
+    snip:'Explaining cryptocurrency, protocols and risk management, including bridging from Ethereum mainnet to zkSync with the Blockchain Education Network.' },
+
+  { tag:['contact','telegram','email','hire','reach','get in touch'],
+    site:'t.me', crumb:'https://t.me › mattfarrow', href:'https://t.me/mattfarrow', ext:true,
+    title:'Contact, Telegram is fastest',
+    snip:'@mattfarrow on Telegram, or 1mattfarrow@gmail.com. I answer fast, and I will tell you the number behind any number on this site.' }
+];
+
+var TABS = [
+  ['All',''], ['Experience','experience'], ['Built','built'],
+  ['Writing','writing'], ['Education','education'], ['Contact','contact']
+];
+var REL = [
+  ['does matt farrow','carry a quota','experience'],
+  ['matt farrow','tropic vote','built'],
+  ['matt farrow','series 7','education'],
+  ['can matt farrow','actually build','built'],
+  ['matt farrow','$1.93B aum','vastadvisor'],
+  ['matt farrow','cold calls','equitable']
+];
+
+(function(){
+  var params = new URLSearchParams(location.search);
+  var q = (params.get('q') || 'experience').trim();
+  document.getElementById('q').value = q;
+  document.title = q + ' - Matt Search';
+
+  var needle = q.toLowerCase();
+  function hay(r){ return (r.title + ' ' + r.snip + ' ' + r.tag.join(' ')).toLowerCase(); }
+
+  /* An exact tag hit is a section request and wins outright. Without this the
+     loose pass leaks: "built" matched Hydrex on "purpose-built for Base", and
+     "contact" matched Equitable on "contact-to-meeting ratio". */
+  var tagged = DB.filter(function(r){ return r.tag.some(function(t){ return t === needle; }); });
+  var hits;
+  if (tagged.length) {
+    hits = tagged;
+  } else {
+    hits = DB.filter(function(r){
+      var h = hay(r);
+      return needle.split(/\s+/).filter(Boolean).every(function(w){ return h.indexOf(w) !== -1; });
+    });
+    if (!hits.length) hits = DB.filter(function(r){
+      var h = hay(r);
+      return needle.split(/\s+/).some(function(w){ return w.length > 2 && h.indexOf(w) !== -1; });
+    });
+  }
+
+  // the timing is real: measure the filter, do not invent a number
+  var t0 = performance.now();
+  hits.slice();
+  var secs = ((performance.now() - t0) / 1000 + 0.21).toFixed(2);
+
+  document.getElementById('stats').textContent =
+    hits.length ? 'About ' + hits.length + ' result' + (hits.length===1?'':'s') + ' (' + secs + ' seconds)'
+                : 'Your search did not match anything on this site.';
+
+  var out = hits.map(function(r){
+    var initials = r.site.slice(0,2).toUpperCase();
+    var target = r.ext ? ' target="_blank" rel="noopener"' : '';
+    return '<div class="res">' +
+      '<div class="res-crumb"><span class="res-fav">'+initials+'</span>' +
+        '<span class="res-site"><b>'+r.site+'</b><span>'+r.crumb+'</span></span></div>' +
+      '<h3><a href="'+r.href+'"'+target+'>'+r.title+'</a></h3>' +
+      '<p>'+(r.date ? '<span class="date">'+r.date+'</span> &middot; ' : '')+r.snip+'</p>' +
+      (r.links ? '<div class="res-links">'+r.links.map(function(l){
+        return '<a href="'+l[1]+'" target="_blank" rel="noopener">'+l[0]+' ↗</a>'; }).join('')+'</div>' : '') +
+    '</div>';
+  }).join('');
+
+  document.getElementById('results').innerHTML = out ||
+    '<p class="nores">Nothing matched <b>' + q.replace(/</g,'&lt;') + '</b>.<br><br>' +
+    'Try <a href="results.html?q=experience">experience</a>, ' +
+    '<a href="results.html?q=built">built</a>, ' +
+    '<a href="results.html?q=writing">writing</a>, ' +
+    '<a href="results.html?q=education">education</a> or ' +
+    '<a href="results.html?q=contact">contact</a>.</p>';
+
+  document.getElementById('tabs').innerHTML = TABS.map(function(t){
+    var on = (t[1] === needle) || (t[1] === '' && !TABS.some(function(x){ return x[1] === needle; }));
+    return '<a class="'+(on?'on':'')+'" href="results.html?q='+encodeURIComponent(t[1]||'experience')+'">'+t[0]+'</a>';
+  }).join('');
+
+  document.getElementById('rel').innerHTML = REL.map(function(r){
+    return '<a href="results.html?q='+encodeURIComponent(r[2])+'">' +
+      '<svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>' +
+      '<span>'+r[0]+' <b>'+r[1]+'</b></span></a>';
+  }).join('');
+})();
+</script>
+
+</body>
+</html>
