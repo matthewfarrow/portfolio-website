@@ -1,6 +1,7 @@
-/** Fill [data-live] nodes from the public Hydrex partner revenue API. */
+/** Fill [data-live] nodes from the partner revenue book. Same-origin proxy first. */
 (function () {
-  var URL = 'https://hydrex-revenue-tracker.vercel.app/api/revenue';
+  var PROXY = '/api/hydrex-revenue';
+  var DIRECT = 'https://hydrex-revenue-tracker.vercel.app/api/revenue';
 
   function compactUsd(n) {
     if (!isFinite(n)) return '$0';
@@ -20,24 +21,35 @@
     });
   }
 
-  fetch(URL)
-    .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
-    .then(function (d) {
-      var h = d.headlines || {};
-      var tvl = d.tvl || {};
-      fill('peakTvl', compactUsd(tvl.peakTvl));
-      fill('currentTvl', compactUsd(tvl.currentTvl));
-      fill('fees', compactUsd(h.realizedFees));
-      fill('bribes', compactUsd(h.allBribes || h.realizedBribes));
-      fill('total', compactUsd(h.total));
-      fill('partners', String(d.partnerCount));
-      var active = (d.partners || []).filter(function (p) { return (p.currentTvl || 0) > 0; }).length;
-      fill('active', String(active));
-      if (d.bestMonth) fill('bestMonth', compactUsd(d.bestMonth.revenue));
-      var admPeak = (d.partners || [])
-        .filter(function (p) { return p.admiralsClub; })
-        .reduce(function (s, p) { return s + (p.peakTvl || 0); }, 0);
-      if (admPeak > 0) fill('admiralsTvl', compactUsd(admPeak));
-    })
-    .catch(function () { /* keep the HTML fallbacks */ });
+  function pull(url) {
+    return fetch(url, { cache: 'no-store' }).then(function (r) {
+      var ct = r.headers.get('content-type') || '';
+      if (!r.ok || ct.indexOf('json') === -1) throw new Error('bad response');
+      return r.json();
+    });
+  }
+
+  function apply(d) {
+    var h = d.headlines || {};
+    var tvl = d.tvl || {};
+    fill('peakTvl', compactUsd(tvl.peakTvl));
+    fill('currentTvl', compactUsd(tvl.currentTvl));
+    fill('fees', compactUsd(h.realizedFees));
+    fill('bribes', compactUsd(h.allBribes || h.realizedBribes));
+    fill('total', compactUsd(h.total));
+    fill('partners', String(d.partnerCount));
+    var active = (d.partners || []).filter(function (p) { return (p.currentTvl || 0) >= 1000; }).length;
+    fill('active', String(active));
+    if (d.bestMonth) fill('bestMonth', compactUsd(d.bestMonth.revenue));
+    var admPeak = (d.partners || [])
+      .filter(function (p) { return p.admiralsClub; })
+      .reduce(function (s, p) { return s + (p.peakTvl || 0); }, 0);
+    if (admPeak > 0) fill('admiralsTvl', compactUsd(admPeak));
+    if (d.lastUpdated) {
+      var dt = new Date(d.lastUpdated);
+      if (!isNaN(dt.getTime())) fill('asOf', dt.toUTCString().replace(' GMT', ' UTC'));
+    }
+  }
+
+  pull(PROXY).catch(function () { return pull(DIRECT); }).then(apply).catch(function () {});
 })();

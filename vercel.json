@@ -1,3 +1,9 @@
 {
-  "version": 2
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/api/hydrex-revenue",
+      "destination": "https://hydrex-revenue-tracker.vercel.app/api/revenue"
+    }
+  ]
 }
